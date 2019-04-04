@@ -1,0 +1,57 @@
+#mu-header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+.mu-main-navbar {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 20px 0;
+  border-radius: 0;
+  margin-bottom: 0;
+
+}
+
+.mu-main-navbar .mu-main-nav {
+  font-family: "Open Sans", sans-serif;
+}
+
+.mu-main-navbar .mu-main-nav li a {
+  color: #333;
+
+
+.mu-main-navbar .mu-main-nav .dropdown-menu {
+  background-color: #fff;
+  border-radius: 0;
+}
+
+.mu-main-navbar .mu-main-nav .dropdown-menu li a {
+  padding: 10px 20px;
+}
+
+.mu-main-navbar .navbar-header .navbar-brand {
+  color: #333;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 35px;  
+  padding: 0;
+  margin-top: 16px;
+  height: 34px;
+  width: 180px;
+
+}
+
+.mu-main-navbar .navbar-header .navbar-brand-small {
+  height: 20px;
+  margin-top: 16px;
+  width: 105px;
+}
+
+.mu-main-navbar .navbar-header .navbar-brand-small span {
+  margin-top: -4px;
+}
