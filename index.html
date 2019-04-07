@@ -1,23 +1,644 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="bootstrap-4.2.1-dist\css\bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap-4.2.1-dist\js\bootstrap.js">
-	<link rel="stylesheet" type="text/css" href="bootstrap-4.2.1-dist\js\bootstrap.min.js">
-	<script  src="jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="jquery.js">
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-</head>
-<body>
-
-hello world !
-hello world
-<p>first project</p>
-<div>ghjklmùml</div>
-<div>TDI Samir  Aoujil</div>
-<p></p>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
 
 
-</body>
+    <title>MCA | Home</title>
+
+    <link href="fichier/css/font-awesome.css" rel="stylesheet">
+    <link href="fichier/css/bootstrap.css" rel="stylesheet">   
+    <link href="fichier/css/slick.css" rel="stylesheet" type="text/css" >    
+    
+    <link href="style.css" rel="stylesheet">    
+
+  </head>
+  <body>
+
+
+    <a class="scrollToTop" href="#" >
+      <i class="fa fa-angle-up"></i>
+    </a>
+  
+  <header id="mu-header">  
+    <nav class="navbar navbar-default mu-main-navbar " role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+          </button>
+           <a href="index.html"><img  src="pictures\logo.jpg" style="width:60px" class="rounded-circle"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#mu-about-us">About us</a></li>                       
+            <li><a href="#mu-restaurant-menu">Menu</a></li>                       
+            <li><a href="#mu-reservation">Reservation</a></li>                       
+            <li><a href="#mu-gallery">Gallery</a></li>
+            
+            <li><a href="#mu-contact">Contact us</a></li> 
+          </ul>                            
+        </div>     
+      </div>          
+    </nav> 
+  </header>
+ 
+
+  <section id="mu-slider">
+    <div class="mu-slider-area"> 
+      <div class="mu-top-slider">
+
+       
+        <div class="mu-top-slider-single">
+          <img src="Pictures/slider/1.jpeg" alt="img">
+          <div class="mu-top-slider-content">
+            <span class="mu-slider-small-title text-success">Welcome</span>
+            <h2 class="mu-slider-title">To The MCA</h2>
+            <p>Restaurant Marocain en Ligne avec differente Catégories</p>           
+            <a href="#mu-about-us" class="mu-readmore-btn mu-reservation-btn">Learn More About Us</a>
+          </div>
+        </div>    
+
+         
+        <div class="mu-top-slider-single">
+          <img src="Pictures/slider/2.jpg" alt="img">
+          <div class="mu-top-slider-content">
+            
+            <h2 class="mu-slider-title">Restaurant Marocain</h2>
+                     
+           <a href="#mu-about-us" class="mu-readmore-btn mu-reservation-btn">Learn More About Us</a>
+          </div>
+        </div>
+
+      
+        <div class="mu-top-slider-single">
+          <img src="Pictures/slider/3.jpg" alt="img">
+          <div class="mu-top-slider-content">
+            <span class="mu-slider-small-title">Des Plats Delicious</span>
+            
+            <a href="#mu-about-us" class="mu-readmore-btn mu-reservation-btn">Learn More About Us</a>
+          </div>
+        </div>  
+
+      </div>
+    </div>
+  </section>
+
+  <section id="mu-about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-about-us-area">
+
+            <div class="mu-title">
+              
+              <h2>ABOUT US</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+               <div class="mu-about-us-left">     
+                <img src="Pictures/about-us.jpg" alt="img">           
+                </div>
+              </div>
+              <div class="col-md-6">
+                 <div class="mu-about-us-right">
+                 <p>MCA est un restaurent marocain qui est localisé à Marrakech Gueliz crée le 12 Mars 2018. Parmi
+				Notre activités principales : Préparer des bons et sanitaires plats marocains, français, thaïlandais et
+				japonais, donner une expérience de qualité aux visiteurs. MCA a 20 salariés (Chef cuisinier,
+				cuisinier des plats marocain et français, cuisinier des plats thaïlandais et japonais, récepteur et
+				caissier, des serveurs, des livreurs…)</p>                              
+				    <ul>
+                    <li>Notre Objectifs Avoir plus des visiteurset gagner des nouveaux clients.</li>
+                    <li>Faciliter de commander aux clients non-motorisés.</li>
+                    <li>Satisfaire les clients.</li>                    
+                    <li> Agrandir Notre projet..</li>
+                    <li>Donner le droit aux clients de pouvoir nous contacter.</li>
+                    
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mu-counter" style="background-image: url(Pictures/bg.jpg);">
+    <div class="mu-counter-overlay">
+      <div class="container">
+      	<h1 style="text-align: center; font-size: 80px; color: white;" >Catégories</h1>
+        <div class="row">
+
+          <div class="col-md-12">
+
+            <div class="mu-counter-area">
+
+              <ul class="mu-counter-nav">
+				<li class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="mu-single-counter">
+                    <span>Pizza Menu</span>
+                    <br>
+                    <p><img src="Pictures/pizza.jpg" height="190px" width="240px"></p>
+                  </div>
+                </li>
+                <li class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="mu-single-counter">
+                    <span>Burger Menu</span>
+                    <br>
+                    <p><img src="Pictures/burger.jpg" height="190px" width="240px"></p>
+                  </div>
+                </li>
+                
+                 <li class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="mu-single-counter">
+                    <span>Sushi Menu</span>
+                    <br>
+                    <p><img src="Pictures/sushi.jpg" height="190px" width="240px"></p>
+                  </div>
+                </li>
+
+                 <li class="col-md-3 col-sm-3 col-xs-12">
+                  <div class="mu-single-counter">
+                    <span>Boisson Menu</span>
+                    <br>
+                    
+                    <p><img src="Pictures/Boisson.jpg" height="190px" width="240px"></p>
+                  </div>
+               </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mu-restaurant-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-restaurant-menu-area">
+            <div class="mu-title">
+              <h2>OUR MENU</h2>
+            </div>       
+            <div class="mu-restaurant-menu-content">
+              <ul class="nav nav-tabs text-success mu-restaurant-menu">
+                <li class="active"><a href="#pizza" data-toggle="tab">Pizza</a></li>
+                <li><a href="#burger" data-toggle="tab">Burger</a></li>
+                <li><a href="#sushi" data-toggle="tab">Sushi</a></li>
+                <li><a href="#boisson" data-toggle="tab">Boisson</a></li>
+              </ul>    
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="pizza">
+                  <div class="mu-tab-content-area">
+                    <div class="row">
+
+                      <div class="col-md-6">
+                        <div class="mu-tab-content-left">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/Margherita.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Margherita</a></h4>
+                                  <span class="mu-menu-price">18DH</span>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/napoletana.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">napoletana</a></h4>
+                                  <span class="mu-menu-price">35DH</span>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/4saisons.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Quatre saisons</a></h4>
+                                  <span class="mu-menu-price">50DH</span>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>   
+                        </div>
+                      </div>
+
+                     <div class="col-md-6">
+                       <div class="mu-tab-content-right">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/Viande.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">pizza viande hachée</a></h4>
+                                  <span class="mu-menu-price">23DH</span>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/pizzaïolo.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Pizzaïolo</a></h4>
+                                  <span class="mu-menu-price">60DH</span>
+                                  
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/fruit.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Pizza Fruit de Mer</a></h4>
+                                  <span class="mu-menu-price">25DH</span>
+                                
+                                </div>
+                              </div>
+                            </li>
+                          </ul>   
+                       </div>
+                     </div>
+
+                   </div>
+                 </div>
+                </div>
+
+                <div class="tab-pane fade" id="burger">
+                  <div class="mu-tab-content-area">
+                    <div class="row">
+
+                      <div class="col-md-6">
+                        <div class="mu-tab-content-left">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/burger1.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Australia</a></h4>
+                                  <span class="mu-menu-price">38DH</span>
+                                 
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/burger2.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Buffalo burgers</a></h4>
+                                  <span class="mu-menu-price">48DH</span>
+                                  
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/burger3.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">cheese burger</a></h4>
+                                  <span class="mu-menu-price">50DH</span>
+                                  
+                                </div>
+                              </div>
+                            </li>
+                          </ul>   
+                        </div>
+                      </div>
+
+                     <div class="col-md-6">
+                       <div class="mu-tab-content-right">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/burger4.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">chili burger</a></h4>
+                                  <span class="mu-menu-price">65DH</span>
+                                 
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/burger5.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">salmon burger</a></h4>
+                                  <span class="mu-menu-price">70DH</span>
+                                
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/burger6.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#"> rice burger</a></h4>
+                                  <span class="mu-menu-price">35DH</span>
+                                 
+                                </div>
+                              </div>
+                            </li>
+                          </ul>   
+                       </div>
+                     </div>
+
+                   </div>
+                 </div>
+                </div>
+
+                <div class="tab-pane fade" id="sushi">
+                  <div class="mu-tab-content-area">
+                    <div class="row">
+
+                      <div class="col-md-6">
+                        <div class="mu-tab-content-left">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/sushi1.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">sushi Egg Roll</a></h4>
+                                  <span class="mu-menu-price">30DH</span>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/sushi2.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Sushi Maki Sushi</a></h4>
+                                  <span class="mu-menu-price">45DH</span>
+                                 
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/sushi3.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Sushi Futo Maki</a></h4>
+                                  <span class="mu-menu-price">50DH</span>
+                                  
+                                </div>
+                              </div>
+                            </li>
+                          </ul>   
+                        </div>
+                      </div>
+
+                     <div class="col-md-6">
+                       <div class="mu-tab-content-right">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/sushi4.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Temaki Sushi</a></h4>
+                                  <span class="mu-menu-price">55DH</span>
+                                
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/sushi5.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Sushi Uramaki</a></h4>
+                                  <span class="mu-menu-price">35DH</span> 
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/sushi6.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">sushi gunkan maki</a></h4>
+                                  <span class="mu-menu-price">55DH</span>                                 
+                                </div>
+                              </div>
+                            </li>
+                          </ul>   
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                </div>
+
+                <div class="tab-pane fade" id="boisson">
+                  <div class="mu-tab-content-area">
+                    <div class="row">
+
+                      <div class="col-md-6">
+                        <div class="mu-tab-content-left">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/coca.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Coca</a></h4>
+                                  <span class="mu-menu-price">15DH</span>   
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/fanta.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Fanta</a></h4>
+                                  <span class="mu-menu-price">15DH</span> 
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/sprite.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Sprite</a></h4>
+                                  <span class="mu-menu-price">15DH</span>     
+                                </div>
+                              </div>
+                            </li>
+                          </ul>   
+                        </div>
+                      </div>
+
+                     <div class="col-md-6">
+                       <div class="mu-tab-content-right">
+                          <ul class="mu-menu-item-nav">
+                            <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/fraise.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Jue de Fraise</a></h4>
+                                  <span class="mu-menu-price">30DH</span> 
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/orange.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Jue d'orange</a></h4>
+                                  <span class="mu-menu-price">17DH</span>
+                                </div>
+                              </div>
+                            </li>
+                             <li>
+                              <div class="media">
+                                <div class="media-left">
+                                  <a href="#">
+                                    <img class="media-object" src="Pictures/banane.jpg" alt="img">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <h4 class="media-heading"><a href="#">Jue de Banane</a></h4>
+                                  <span class="mu-menu-price">25DH</span>
+                                  
+                                </div>
+                              </div>
+                            </li>
+                          </ul>   
+                       </div>
+                     </div>
+
+                   </div>
+                 </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="mu-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="mu-footer-area">
+           <div class="mu-footer-social">
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-twitter"></span></a>
+            <a href="#"><span class="fa fa-google-plus"></span></a>
+  
+          </div>
+          <div class="mu-footer-copyright">
+            <p>&copy; Copyright <a rel="nofollow" href="http://markups.io">MCA Foods</a> Reserve Now</p>
+          </div>         
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="fichier/js/jquery.min.js"></script>  
+  <script src="fichier/js/bootstrap.js"></script>   
+  <script src="fichier/js/slick.js" type="text/javascript" ></script>
+  <script src="fichier/js/custom.js"></script> 
+
+  </body>
 </html>
