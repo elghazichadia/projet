@@ -332,35 +332,30 @@ img {
 
 .mu-top-slider .slick-prev,
 .mu-top-slider .slick-next {
-  background-color: transparent;
-  border: 2px solid #888;
+  background-color: #009933;
+  border: 20px solid #888;
   height: 60px;
   top: 50%;
   width: 70px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .mu-top-slider .slick-prev::before,
 .mu-top-slider .slick-next::before {
-  color: #888;
+  color: #009933;
 }
 
 .mu-top-slider .slick-prev:hover, 
 .mu-top-slider .slick-prev:focus,
 .mu-top-slider .slick-next:hover,
 .mu-top-slider .slick-next:focus {
-  color: #fff;
+  color: #009933;
 }
 
 .mu-top-slider .slick-prev:hover::before, 
 .mu-top-slider .slick-prev:focus::before,
 .mu-top-slider .slick-next:hover::before,
 .mu-top-slider .slick-next:focus::before {
-  color: #fff;
+  color: #009933;
 }
 
 .mu-top-slider .slick-prev {
@@ -380,7 +375,7 @@ img {
 }
 
 .mu-top-slider .slick-dots li button::before {
-  color: transparent;
+  color: #009933;
   background: transparent;
   border-radius: 50%;
   -webkit-transition: all 0.5s;
@@ -389,7 +384,7 @@ img {
 }
 
 .mu-top-slider .slick-dots li.slick-active button::before {
-  color: transparent;
+  color: #009933;
   border-radius: 50%;
   opacity: 1;
 }
