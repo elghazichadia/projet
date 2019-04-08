@@ -96,11 +96,7 @@ img {
   line-height: 18px;
   letter-spacing: 0.5px;
   padding: 12px 25px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+
 }
 
 .mu-browsmore-btn:hover, 
@@ -208,7 +204,6 @@ img {
 .scrollToTop:focus {
   color: #fff;
 }
-
 /*==================
 	SLIDER SECTION
 ====================*/
