@@ -6,12 +6,9 @@ body {
   font-size: 15px;
   line-height: 24px;
 }
-
 .no-padding {
   padding: 0;
 }
-
-
 ul {
   padding: 0;
   margin: 0;
@@ -22,26 +19,18 @@ a {
   text-decoration: none;
   color: #333333;
 }
-
 a:hover,
 a:focus {
   outline: none;
   text-decoration: none;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
+h1, h2,  h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
   color: #009933;
   text-align: center; 
   font-size: 80px;
-
 }
-
 h2 {
   font-size: 30px;
   font-weight: 700;
@@ -71,9 +60,7 @@ img {
   position: absolute;
   right: 5px;
   top: 5px;
-
 }
-
 .mu-readmore-btn:hover, 
 .mu-readmore-btn:focus {
   color: #fff;
@@ -98,34 +85,10 @@ img {
   padding: 12px 25px;
 
 }
-
 .mu-browsmore-btn:hover, 
 .mu-browsmore-btn:focus {
   color: #fff;
 }
-
-
-
-.mu-footer-social a {
-  background-color: #555;
-  border-radius: 50%;
-  color: #009933;
-  display: inline-block;
-  font-size: 20px;
-  height: 45px;
-  line-height: 47px;
-  margin: 5px;
-  text-align: center;
-  width: 45px;}
-
-
-  float: left;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/*================== HEADER ====================*/
 
 #mu-header {
   background-color: #fff;
@@ -138,17 +101,13 @@ img {
   z-index: 999;
 }
 
-
-/*==================NAVBAR SECTION====================*/
 .mu-main-navbar {
   background-color: #f2f2f2;
   border: none;
   padding: 20px 0;
   border-radius: 0;
   margin-bottom: 0;
-
 }
-
 .mu-main-navbar .mu-main-nav {
   font-family: "Open Sans", sans-serif;
 }
@@ -178,11 +137,9 @@ img {
   width: 180px;
 
 }
-
 .mu-main-navbar .navbar-header .navbar-brand img {
   margin-top: -10px;
 }
-
 
 .mu-main-navbar .navbar-header .navbar-brand-small {
   height: 20px;
@@ -193,11 +150,6 @@ img {
 .mu-main-navbar .navbar-header .navbar-brand-small span {
   margin-top: -4px;
 }
-
-
-
-
-/*scrol to top*/
 
 .scrollToTop {
   bottom: 60px;
@@ -220,10 +172,6 @@ img {
 .scrollToTop:focus {
   color: #fff;
 }
-/*==================
-	SLIDER SECTION
-====================*/
-
 #mu-slider {
   display: inline;
   float: left;
@@ -231,13 +179,11 @@ img {
   width: 100%;
   position: relative;
 }
-
 .mu-slider-area {
   display: inline;
   float: left;
   width: 100%;
 }
-
 .mu-top-slider {
   display: inline;
   float: left;
@@ -250,7 +196,6 @@ img {
   position: relative;
   width: 100%;
 }
-
 .mu-top-slider .mu-top-slider-single:after {
   background-color: rgba(0, 0, 0, 0.6);
   bottom: 0;
@@ -274,7 +219,6 @@ img {
   text-align: center;
   z-index: 99;
 }
-
 .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-small-title {
   font-family: "Tangerine", cursive;
   font-size: 100px;
@@ -286,6 +230,12 @@ img {
   color: #fff;
   font-size: 70px;
   line-height: 90px;
+}
+#mu-gallery {
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
 }
 
 .mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
@@ -349,7 +299,6 @@ img {
 .mu-top-slider .slick-dots li button {
   border-radius: 50%;
 }
-
 .mu-top-slider .slick-dots li button::before {
   color: #009933;
   background: transparent;
@@ -363,9 +312,6 @@ img {
   opacity: 1;
 }
 
-
-/*==================ABOUT US ====================*/
-
 #mu-about-us {
   display: inline;
   float: left;
@@ -378,7 +324,6 @@ img {
   float: left;
   width: 100%;
 }
-
 .mu-about-us-right {
   display: inline;
   float: left;
@@ -412,7 +357,6 @@ img {
   padding-right: 15px;
   width: 100%;
 }
-
 .mu-title {
   display: inline;
   float: left;
@@ -432,12 +376,6 @@ img {
   font-size: 35px;
   margin-bottom: 5px;
 }
-
-
-/*==================
- COUNTER SECTION
-====================*/
-
 #mu-counter {
   background-attachment: fixed;
 background-image: url(Pictures/bg.jpg);
@@ -586,28 +524,6 @@ background-image: url(Pictures/bg.jpg);
   width: 100%;
 }
 
-.mu-footer-copyright {
-  display: inline;
-  float: left;
-  width: 100%;
-}
-.mu-footer-copyright p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  color: #fff;
-}
-
-#mu-contact {
-  background-color: #f8f8f8;
-  display: inline;
-  float: left;
-  padding: 100px 0;
-  width: 100%;
-}
-
-
-
 .mu-tab-content-right {
   display: inline;
   float: left;
@@ -660,16 +576,11 @@ background-image: url(Pictures/bg.jpg);
 }
 
 
-
-/*==================
- FOOTER SECTION
-====================*/
-
 #mu-footer {
   background-color: #444;
   display: inline;
   float: left;
-  padding: 50px 0;
+  padding:15px 0;
   width: 100%;
 }
 
@@ -700,19 +611,27 @@ background-image: url(Pictures/bg.jpg);
   text-align: center;
   width: 45px;}
 
-
 .mu-footer-copyright {
   display: inline;
   float: left;
   width: 100%;
 }
-
 .mu-footer-copyright p {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 0.5px;
   color: #fff;
 }
+
+#mu-contact {
+  background-color: #f8f8f8;
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+}
+
+
 
 
 
