@@ -570,6 +570,28 @@ background-image: url(Pictures/bg.jpg);
   width: 100%;
 }
 
+.mu-footer-copyright {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+.mu-footer-copyright p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+#mu-contact {
+  background-color: #f8f8f8;
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+}
+
+
+
 .mu-tab-content-right {
   display: inline;
   float: left;
