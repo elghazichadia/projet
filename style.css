@@ -106,6 +106,17 @@ img {
 
 
 
+.mu-footer-social a {
+  background-color: #555;
+  border-radius: 50%;
+  color: #009933;
+  display: inline-block;
+  font-size: 20px;
+  height: 45px;
+  line-height: 47px;
+  margin: 5px;
+  text-align: center;
+  width: 45px;}
 
 
 
