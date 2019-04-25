@@ -168,10 +168,6 @@ img {
 }
 
 
-.scrollToTop:hover,
-.scrollToTop:focus {
-  color: #fff;
-}
 #mu-slider {
   display: inline;
   float: left;
@@ -364,6 +360,11 @@ img {
   margin-bottom: 20px;
   text-align: center;
 }
+.mu-coupsdecoeur{
+  background-color: #ccffcc;
+
+}
+
 
 .mu-title .mu-subtitle {
   font-size: 50px;
@@ -574,7 +575,16 @@ background-image: url(Pictures/bg.jpg);
   margin-top: 10px;
   font-size: 14px;
 }
-
+.mu-coupsdecoeur {
+  padding-bottom:  15px;
+}
+.mu-counter-coupsdecoeur {
+  padding-bottom: 40px ;
+  padding-left: 40px;
+}
+.card-img{
+  width: 100px;
+}
 
 #mu-footer {
   background-color: #444;
