@@ -454,7 +454,7 @@ background-image: url(Pictures/bg.jpg);
   margin-bottom: 0;
 }
 
-/*==================MENU ====================*/
+
 
 #mu-restaurant-menu {
   
@@ -583,9 +583,11 @@ background-image: url(Pictures/bg.jpg);
   padding-left: 40px;
 }
 .card-img{
-  width: 100px;
+  width: 150px;
 }
-
+.card{
+  text-align: center;
+}
 #mu-footer {
   background-color: #444;
   display: inline;
