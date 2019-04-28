@@ -293,8 +293,13 @@ img {
   border-radius: 50%;
   opacity: 1;
 }
+#mu-about-us-area{
 
+}
+.part1{
+}
 #mu-about-us {
+
   display: inline;
   float: left;
   width: 100%;
@@ -347,7 +352,7 @@ img {
   text-align: center;
 }
 #mu-cc{
-  background-color:  #ecf9ec;
+  
 
 }
 
@@ -628,6 +633,7 @@ background-image: url(Pictures/bg.jpg);
   padding: 100px 0;
   width: 100%;
 }
+
 
 
 
