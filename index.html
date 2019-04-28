@@ -1495,89 +1495,174 @@
    </section>
    <!------------------------------------------------->
 
-<!-- contact -->
-<section id="mu-contact">
- <div class="mu-title">
-              <span class="mu-subtitle">Obtenir plus d'informations</span>
-              <h2 style="margin-top: 20px">Contactez Nous</h2>
-            </div>   
-   
-    <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="mu-contact-left">
-                    <div id="form-messages"></div>
-                    
-                    <form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
-                      <div class="form-group">
-                        <label for="name">Votre Nom et Prénom</label>
-                        <input type="text" class="form-control" id="name" name="nom" placeholder="Nom et Prénom" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="email">Addresse Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                      </div>                      
-                      <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <input type="text" class="form-control" id="subject" name="Sujet" placeholder="Sujet" required>
-                      </div>
-                      <div class="form-group">
-                        <label for="message">Message</label>                        
-                        <textarea class="form-control" id="message" name="message"  cols="30" rows="10" placeholder="Ecrire Votre Message" required></textarea>
-                      </div>                      
-                      <button type="submit" class="btn btn-success" style="width: 100%; height: 50px; font-size: 20px;">Send Message</button>
-                    </form>
-                  </div>
-                </div>
-              
-              <div class="container">
-              
-                <div class="col-md-6">
-                  <div class="mu-contact-right">
-                    <div id="form-messages"></div>
-                    
-                    
-                      <div class="mu-contact-right">
-                    <div class="mu-contact-widget">
-                      <h3 style="margin-top: 25px; font-size: 40px; color: green;">More Informations</h3>
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13588.231844374694!2d-8.021693223057706!3d31.632263371154174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d931f3209%3A0x96ce34d39325c762!2sGu%C3%A9liz%2C+Marrakech+40000!5e0!3m2!1sfr!2sma!4v1555866682816!5m2!1sfr!2sma" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        <p style="font-size: 20px"><b class="fa fa-envelope-o"></b><b>  mcafoods@gmail.com</b></p>
-                        <p style="font-size: 20px"><b class="fa fa-map-marker"></b><b>  Marrakech , Gueliz avenu 2 immeuble Bloc 3</b></p>
-                        <p style="font-size: 20px"><b class="fa fa-instagram"></b><b>  mca_foods</b></p>
-                        <p style="font-size: 20px"><b class="fa fa-facebook"></b><b>  MCA Foods</b></p>
+ <!-- contact -->
+    <section class="contact py-5" id="contact">
+        <div class="container pb-md-5">
+            <div class="header py-lg-5 pb-3 text-center">
+                <h3 class="tittle mb-lg-5 mb-3"> Contact Us</h3>
+            </div>
+
+            <div class="contact-form mx-auto text-left">
+                <form name="contactform" id="contactform1" method="post" action="#">
+                    <div class="row">
+                        <div class="col-lg-4 con-gd">
+                            <div class="form-group">
+                                <label>Name *</label>
+                                <input type="text" class="form-control" id="name" placeholder="" name="name" required="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 con-gd">
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" class="form-control" id="email" placeholder="" name="email" required="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 contact-page">
+                            <div class="form-group">
+                                <label>Submit *</label>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+
                     </div>
-                    
-                  </div>
-                   
-                  </div>
-                </div>  
-                </div>        
-              </div>
-                
-              </div>
-  </section>
 
-	<!--------------FOOTER---------------->
+                </form>
+            </div>
+            <ul class="list-unstyled row text-left mb-lg-5 mb-3">
+                <li class="col-lg-4 adress-info">
+                    <div class="row">
+                        <div class="col-md-3 text-lg-center adress-icon">
+                            <span class="fa fa-map-marker"></span>
+                        </div>
+                        <div class="col-md-9 text-left">
+                            <h6>Location</h6>
+                            <p>The company name
+                                <br>New York City. </p>
+                        </div>
+                    </div>
+                </li>
 
-  <footer id="mu-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-        <div class="mu-footer-area">
-           <div class="mu-footer-social">
-            <a href="https://www.facebook.com/Mca-Foods-407143216733119/"><span class="fa fa-facebook"></span></a>
-            <a href="https://www.instagram.com/mca_foods/"><span class="fa fa-instagram"></span></a>
-            <a href="https://mail.google.com/mail/u/1/#inbox"><span class="fa fa-google-plus"></span></a>
-  
-          </div>
-          <div class="mu-footer-copyright">
-            <p> MCA Foods 2019</p>
-          </div>         
+                <li class="col-lg-4 adress-info">
+                    <div class="row">
+                        <div class="col-md-3 text-lg-center adress-icon">
+                            <span class="fa fa-envelope-open-o"></span>
+                        </div>
+                        <div class="col-md-9 text-left">
+                            <h6>Email</h6>
+                            <a href="mailto:info@example.com">mail@example.com</a>
+                            <br>
+                            <a href="mailto:info@example.com">mail2@example.com</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="col-lg-4 adress-info">
+                    <div class="row">
+                        <div class="col-md-3 text-lg-center adress-icon">
+                            <span class="fa fa-mobile"></span>
+                        </div>
+                        <div class="col-md-9 text-left">
+                            <h6>Phone Number</h6>
+                            <p>+ 1234567890</p>
+                            <p>+ 0987654321</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </div>
-      </div>
-    </div>
-  </footer>
+
+    </section>
+    <!-- //contact -->
+    <!-- footer -->
+    <footer class="footer-content">
+        <div class="layer footer">
+            <div class="container-fluid">
+                <div class="row footer-top-inner-w3ls">
+                    <div class="col-lg-4 col-md-6 footer-top mt-md-0 mt-sm-5">
+                        <h2>
+                            <a href="index.html"><span class="fa fa-align-center" aria-hidden="true"></span>HB</a>
+                        </h2>
+                        <p class="my-3">Donec consequat sam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus</p>
+                        <p>
+                            Id quod possimusapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at, semper varius orci.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                        <div class="footer-w3pvt">
+                            <h3 class="mb-3 w3pvt_title">Opening Hours</h3>
+                            <hr>
+                            <ul class="list-info-w3pvt last-w3ls-contact mt-lg-4">
+                                <li>
+                                    <p> Monday - Friday 08.00 am - 10.00 pm</p>
+
+                                </li>
+                                <li class="my-2">
+                                    <p>Saturday 08.00 am - 10.00 pm</p>
+
+                                </li>
+                                <li class="my-2">
+                                    <p>Sunday 08.00 am - 10.00 pm</p>
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                        <div class="footer-w3pvt">
+                            <h3 class="mb-3 w3pvt_title">Contact Us</h3>
+                            <hr>
+                            <div class="last-w3ls-contact">
+                                <p>
+                                    <a href="mailto:example@email.com">info@example.com</a>
+                                </p>
+                            </div>
+                            <div class="last-w3ls-contact my-2">
+                                <p>+ 456 123 7890</p>
+                            </div>
+                            <div class="last-w3ls-contact">
+                                <p>+ 90 nsequursu dsdesdc,
+                                    <br>xxx Honey State 049436.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="copy-right-grids text-li text-center my-sm-4 my-4">© 2019 Humburger. All Rights Reserved | Design by
+                    <a href="http://w3layouts.com/"> W3layouts </a>
+                </p>
+                <div class="w3ls-footer text-center mt-4">
+                    <ul class="list-unstyled w3ls-icons">
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-facebook-f"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-dribbble"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa fa-vk"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="move-top text-right"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
+            </div>
+            <!-- //footer bottom -->
+        </div>
+    </footer>
+    <!-- //footer -->
+
 	<!--------------END FOOTER---------------->
 
 
