@@ -19,89 +19,78 @@
     <link href="fichier/css/font-awesome.css" rel="stylesheet">
     <link href="fichier/css/bootstrap.css" rel="stylesheet">   
     <link href="fichier/css/slick.css" rel="stylesheet" type="text/css" >    
-  <link href="style.css" rel="stylesheet">   
+  <link href="style.css" rel="stylesheet" media="all">   
+  <script src="fichier/js/jquery-1.11.1.min.js"></script>
+<script src="fichier/js/SmoothScroll.min.js"></script>
   </head>
   <body>
 
 
   	<!--------------NAV BAR---------------->
-
-  <header id="mu-header">  
-    <nav class="navbar navbar-default mu-main-navbar " role="navigation">  
+<script src="fichier/js/jquery.vide.min.js"></script>
+  <div data-vide-bg="video/cook">
+    <!-- banner -->
+    <div class="banner">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-
-          </button>
+        <div class="header">
+          <div class="logo">
            <a href="index.html"><img  src="pictures\logo.jpg" style="width:60px" class="rounded-circle"></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
-            <li><a href="index.html"><i><b>Accueil</b></i></a></li>
-            <li><a href="#mu-about"><i><b>About us</b></i></a></li> 
-            <li><a href="#history"><i><b>Histoire</b></i></a></li>   
-            <li><a href="#mu-coupsdecoeur"><i><b>Nos coups de coeur</b></i></a></li>   
-            <li><a href="#mu-counter"><i><b>Catégories</b></i></a></li>                       
-            <li><a href="#mu-restaurant-menu"><i><b>Menu</b></i></a></li>  
-            <li><a href="#mu-gallery"><i><b>Gallery</b></i></a></li>     
-            <li><a href="#mu-contact"><i><b>Contactez-Nous</b></i></a></li>                 
-          </ul>                            
-        </div>     
-      </div>          
-    </nav> 
-  </header>
- 	<!-------------- END NAV BAR---------------->
- 
-	<!--------------FIRST SLIDER---------------->
-
-
-  <section id="mu-slider">
-    <div class="mu-slider-area"> 
-      <div class="mu-top-slider">
-
-       
-        <div class="mu-top-slider-single">
-          <img src="Pictures/slider/1.jpeg" alt="img" width="100%" height="600px">
-          <div class="mu-top-slider-content">
-            <span class="mu-slider-small-title text-success">Bienvenue</span>
-            <h2 class="mu-slider-title">à MCA Foods</h2>
-            <p>Restaurant Marocain en Ligne</p>           
-            <a href="#mu-about-us" class="mu-readmore-btn mu-reservation-btn"style="font-size: 20px; color:white;">Savoir plus sur nous</a>
           </div>
-        </div>    
+          <div class="top-nav">
+            <nav class="navbar navbar-default">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu           
+                </button>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a class="active" href="index.html">Accueil</a></li>
+                  <li><a href="#mu-about">About us</a></li>
+                  <li><a href="#history">Histoire</a></li>
+                  <li><a href="#mu-coupsdecoeur">Nos coups de coeur</a></li> 
+                  <li><a href="#mu-counter">Catégorie</a></li>
+                  <li><a href="#mu-restaurant-menu">Menu</a></li>
+                  <li><a href="#mu-gallery">Gallery</a></li>
+                  <li><a href="#mu-contact">Contactez-Nous</a></li>
 
-         
-        <div class="mu-top-slider-single">
-          <img src="Pictures/slider/2.jpg" alt="img" width="100%" height="600px">
-          <div class="mu-top-slider-content">
-             <span class="mu-slider-small-title text-success">MCA Foods</span>
-            <h2 class="mu-slider-title">Découvrez</h2>
-            <p>Nos coups de coeur</p>   
-                  
-           <a href="#mu-about-us" class="mu-readmore-btn mu-reservation-btn"style="font-size: 20px;color:white;">Savoir plus sur nous</a>
+                  <div class="clearfix"> </div>
+                </ul> 
+              </div>  
+            </nav>    
           </div>
+          <div class="clearfix"> </div>
         </div>
-
-      
-              <div class="mu-top-slider-single">
-          <img src="Pictures/slider/3.jpg" alt="img" width="100%" height="600px">
-          <div class="mu-top-slider-content">
-             <span class="mu-slider-small-title text-success">MCA Foods</span>
-            <P >Plats Délicieux</P>
-            <p>Différentes Catégories</p>   
-                  
-           <a href="#mu-about-us" class="mu-readmore-btn mu-reservation-btn"style="font-size: 20px;color:white;">Savoir plus sur nous</a>
+        <div class="banner-info">
+            <span class="mu-slider-small-title text-success" style="font-size: 30px">Bienvenue</span>
+            <h2 class="mu-slider-title text-success" style="color: #009933">à MCA Foods</h2>
+          <p>Restaurant Marocain en Ligne.</p>
+        </div>
+        <div class="banner-grads">
+          <div class="col-md-4 banner-grad">
+            <div class="banner-grad-img">
+              <img src="pictures/merguez.jpg" alt="" />
+              <h4>Suspendisse</h4>
+            </div>
           </div>
+          <div class="col-md-4 banner-grad">
+            <div class="banner-grad-img">
+              <img src="pictures/10025061.jpg" alt="" />
+              <h4>Molestie</h4>
+            </div>
+          </div>
+          <div class="col-md-4 banner-grad">
+            <div class="banner-grad-img">
+              <img src="pictures/new-style-tuna-rolls.jpg" alt="" />
+              <h4>Imperdiet</h4>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
         </div>
-
-
       </div>
     </div>
-  </section>
+    <!-- //banner -->
+ 	<!-------------- END NAV BAR---------------->
+
+</div>
 	<!--------------END FIRST SLIDER---------------->
 	   
 	<!--------------ABOUT US---------------->
