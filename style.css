@@ -952,8 +952,8 @@ background-image: url(Pictures/bg.jpg);
   -webkit-appearance:none;
 }
 .contact-form input[type="submit"]:hover {
-    border: solid 2px #FD5C63;
-    background: #FD5C63;
+    border: solid 2px #009933;
+    background: #009933;
     color: #FFFFFF;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -976,9 +976,7 @@ background-image: url(Pictures/bg.jpg);
     line-height: 1.5em;
     font-weight: 600;
 }
-.address-grid h5 span {
-  display: block;
-}
+
 .address-info-left {
   float: left;
 }
@@ -996,7 +994,7 @@ background-image: url(Pictures/bg.jpg);
 /* footer */
 
 .footer-content {
-    background: url(../images/banner2.jpg) center no-repeat;
+    background: url(video/cook.jpg) center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1045,7 +1043,7 @@ h4.footer-title {
 }
 
 .footer p a {
-    color: #fff;
+    color: #009933;
     text-decoration: underline;
 }
 
@@ -1095,12 +1093,10 @@ h3.w3pvt_title {
 }
 
 .w3ls-icons li a span {
-    color: #fff;
+    color: #009933;
 }
 
-.w3ls-icons li a span:hover {
-    color: #ffc80a;
-}
+
 
 /* //footer */
 *-- Responsive design --*/
