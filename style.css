@@ -1170,7 +1170,26 @@ h3.w3pvt_title {
 
 
 @media screen and (max-width: 991px) {
-
+  .wthree-img{
+    background: url(pictures/Margherita.jpg) no-repeat 0px 0px;
+    background-size: cover;
+  }
+  .wthree-img1{
+    background: url(pictures/sushi-express.jpg) no-repeat 0px 0px;
+    background-size: cover;
+  }
+  .wthree-img2{
+    background: url(pictures/cheesecake-fraise.jpg) no-repeat 0px 0px;
+    background-size: cover; 
+  }
+  .wthree-img3{
+    background: url(pictures/poulet.jpg) no-repeat 0px 0px;
+    background-size: cover; 
+  }
+  .wthree-img4{
+    background: url(pictures/poke-salmon.jpg) no-repeat 0px 0px;
+    background-size: cover; 
+  }
     .popup {
         width: 50%;
     }
@@ -1410,9 +1429,257 @@ h3.w3pvt_title {
         padding: 16px 0;
         width: 100%;
     }
+      .wthree-img{
+    background: url(pictures/Margherita.jpg) no-repeat 0px 0px;
+    background-size: cover;
+  }
+  .wthree-img1{
+    background: url(pictures/sushi-express.jpg) no-repeat 0px 0px;
+    background-size: cover;
+  }
+  .wthree-img2{
+    background: url(pictures/cheesecake-fraise.jpg) no-repeat 0px 0px;
+    background-size: cover; 
+  }
+  .wthree-img3{
+    background: url(pictures/poulet.jpg) no-repeat 0px 0px;
+    background-size: cover; 
+  }
+  .wthree-img4{
+    background: url(pictures/poke-salmon.jpg) no-repeat 0px 0px;
+    background-size: cover; 
+  }
 }
 
-
+@media (max-width:640px){
+  .navbar-default .navbar-toggle {
+    border-color: #FFF;
+    color: #FFF;
+    margin: 1em 0 1em 0;
+  } 
+  .top-nav {
+    margin: 0em 0 0 0;
+    float: left;
+    width: 77%;
+  }
+  div#bs-example-navbar-collapse-1 {
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 4em;
+    z-index: 999;
+  }
+  ul.nav.navbar-nav {
+    float: none;
+    background: rgba(0, 0, 0, 0.91);
+  }
+  .top-nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  .top-nav ul li {
+    display: block;
+    margin: 0;
+    float: none;
+  }
+  .navbar-default .navbar-nav > li > a {
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 0;
+  }
+  .top-nav ul li a {
+    padding: 1em 0;
+  } 
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: none;
+  }
+  .top-nav ul li a:hover {
+    border: none;
+  }
+  .top-nav ul li a.active {
+    border: none;
+  }
+  @media (max-width:1080px){
+  .agileits-special-info {
+    padding: .55em;
+  }
+  .w3ls-special-text:after {
+    width: 133px;
+    height: 144px;
+  }
+  @media (max-width:991px){
+    .w3l-special-grid {
+    width: 100%;
+    float: left;
+    margin-bottom: 1em;
+  }
+  .w3ls-special-img {
+    width: 50%;
+    float: left;
+    min-height: 201px;
+  }
+  .agileits-special-info {
+    width: 50%;
+    float: left;
+  }
+  .agileits-special-info {
+    padding: 3em;
+  }
+  .agileits-special-info h4:after {
+    left: 92px;
+  }
+  .w3ls-special-text h4 {
+    margin: 2.5em 0 0 0;
+  }
+  .w3ls-special-text:after {
+    width: 311px;
+    height: 151px;
+  }
+  @media (max-width:640px){
+    .w3ls-special-text:after {
+    width: 255px;
+  }
+  .special-heading h3, .features h3, .customer-heading h3, .footer-heading h3 {
+    font-size: 2.5em;
+  }
+  @media (max-width:480px){
+      .agileits-special-info {
+      padding: 2.25em;
+  }
+  .agileits-special-info h4:after {
+    left: 56px;
+  }
+  .w3ls-special-text:after {
+    width: 175px;
+  }
+  .special-heading h3, .features h3, .customer-heading h3, .footer-heading h3 {
+    font-size: 2em;
+  }
+  .special {
+    padding: 2em 0;
+  }
+  .special-grids {
+    margin: 2em 0 0 0;
+  }
+  .w3l-special-grid:nth-child(6) {
+    margin: 0;
+  }
+  @media (max-width:414px){
+    .agileits-special-info {
+    padding: 1em;
+  }
+  .w3ls-special-img {
+    min-height: 161px;
+  }
+  .w3ls-special-text h4 {
+    margin: 2em 0 0 0;
+  }
+  .w3ls-special-text:after {
+    width: 145px;
+    height: 115px;
+  }
+  @media (max-width:384px){
+    .agileits-special-info p {
+    font-size: .9em;
+  }
+  .w3ls-special-img {
+    min-height: 150px;
+  }
+  .w3ls-special-text:after {
+    width: 145px;
+    height: 118px;
+  }
+  .effect-1:after {
+    top: 16px;
+    left: 13px;
+  }
+  .w3ls-special-text h4 {
+    margin: 1.7em 0 0 0;
+  }
+  @media (max-width:375px){
+    .w3ls-special-img {
+    width: 100%;
+    float:none;
+  }
+  .agileits-special-info {
+    width: 100%;
+    float:none;
+  }
+  .w3ls-special-text h4 {
+    margin: 3em 0 0 0;
+    font-size: 1.5em;
+  }
+  .w3ls-img {
+    min-height: 218px;
+    background: url(pictures/burger3.jpg) no-repeat 0px 0px;
+    background-size: cover;
+  }
+  .w3ls-special-text h4 {
+    margin: 0;
+    font-size: 2em;
+    padding: 3em 0 0 0;
+  }
+  .w3ls-special-text:after {
+    width: 280px;
+    height: 168px;
+  }
+  .effect-1:after {
+    top: 25px;
+    left: 25px;
+  }
+  .agileits-special-info h4 {
+    font-size: 2em;
+  }
+  .agileits-special-info h4:after {
+    left: 89px;
+    top: 42px;
+  }
+  .agileits-special-info p {
+    font-size: 1em;
+  }
+  .agileits-special-info {
+    padding: 2em;
+  }
+  .wthree-img{
+    background: url(pictures/Margherita.jpg) no-repeat 0px 0px;
+    background-size: cover;
+  }
+  .wthree-img1{
+    background: url(pictures/sushi-express.jpg) no-repeat 0px 0px;
+    background-size: cover;
+  }
+  .wthree-img2{
+    background: url(pictures/cheesecake-fraise.jpg) no-repeat 0px 0px;
+    background-size: cover; 
+  }
+  .wthree-img3{
+    background: url(pictures/poulet.jpg) no-repeat 0px 0px;
+    background-size: cover; 
+  }
+  .wthree-img4{
+    background: url(pictures/poke-salmon.jpg) no-repeat 0px 0px;
+    background-size: cover; 
+  }
+}
+@media (max-width:320px){
+  .w3ls-special-img {
+    min-height: 182px;
+  }
+  .w3ls-special-text h4 {
+    font-size: 1.5em;
+    padding: 3.5em 0 0 0;
+  }
+  .w3ls-special-text:after {
+    width: 225px;
+    height: 135px;
+  }
+  .agileits-special-info h4 {
+    font-size: 1.5em;
+  }
+  .agileits-special-info h4:after {
+    left: 71px;
+    top: 38px;
+  }}
 
 
 
