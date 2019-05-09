@@ -927,7 +927,7 @@ Main Components
 }
 .contact_us .content .form-control {
     background-color: rgba(82,78,78,.07);
-    color: #FFF;
+    color: black;
     border: none;
     
   -webkit-transition: all .2s ease-in-out;
