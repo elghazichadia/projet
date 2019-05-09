@@ -1,18 +1,4 @@
-/* =================================
-------------------------------------
-  Pulse - Restaurant HTML Template
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
 
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
-
-@font-face {
-	font-family: 'HelveticaNeueLTPro';
-	src: url("../fonts/HelveticaNeueLTPro-Md.woff");
-}
 
 html,
 body {
@@ -84,11 +70,6 @@ ol {
 	padding: 0;
 	margin: 0;
 }
-
-/*---------------------
-  Helper CSS
------------------------*/
-
 .section-title {
 	text-align: center;
 	margin-bottom: 75px;
@@ -96,7 +77,7 @@ ol {
 
 .section-title i {
 	display: block;
-	color: #8a8a8a;
+	color: #b3ffb3;
 	font-size: 65px;
 }
 
@@ -155,22 +136,16 @@ ol {
 .text-white span,
 .text-white li,
 .text-white a {
-	color: #fff;
+	color: #b3ffb3;
 }
 
 .rating i {
-	color: #fbb710;
+	color: #b3ffb3;
 }
 
 .rating .is-fade {
 	color: #e0e3e4;
 }
-
-/*---------------------
-  Commom elements
------------------------*/
-
-/* buttons */
 
 .site-btn {
 	display: inline-block;
@@ -275,8 +250,6 @@ ol {
 .el-title {
 	margin-bottom: 60px;
 }
-
-/* Accordion */
 
 .accordion-area .panel {
 	margin-bottom: 13px;
@@ -426,7 +399,7 @@ ol {
 	margin-bottom: 0;
 }
 
-/* Icon box */
+
 
 .icon-boxe {
 	text-align: center;
@@ -443,9 +416,7 @@ ol {
 	margin-bottom: 30px;
 }
 
-/*------------------
-  Header section
----------------------*/
+
 
 .header-section {
 	position: absolute;
@@ -527,9 +498,7 @@ ol {
 	color: #ffc515;
 }
 
-/*------------------
-  Hero section
----------------------*/
+
 
 .hs-item {
 	height: 892px;
@@ -561,7 +530,7 @@ ol {
 }
 
 .hs-content h2 span {
-	color: #ffc515;
+	color: #b3ffb3;
 }
 
 .hs-content p {
@@ -618,7 +587,7 @@ ol {
 }
 
 .hero-slider .owl-dots-number .owl-dot.active {
-	color: #ffc515;
+	color: #b3ffb3;
 }
 
 .hero-slider .owl-dots:not(.owl-dots-number) {
@@ -640,7 +609,7 @@ ol {
 }
 
 .hero-slider .owl-dots:not(.owl-dots-number) .owl-dot.active {
-	background: #ffc515;
+	background: #b3ffb3;
 }
 
 /*---------------------
@@ -679,7 +648,7 @@ ol {
 }
 
 .testimonials-slider .ts-item h6 span {
-	color: #ffc515;
+	color: #b3ffb3;
 }
 
 .testimonials-slider .owl-dots:not(.owl-dots-number) {
@@ -699,12 +668,9 @@ ol {
 }
 
 .testimonials-slider .owl-dots:not(.owl-dots-number) .owl-dot.active {
-	background: #ffc515;
+	background: #b3ffb3;
 }
 
-/*---------------------
-  Services Section
------------------------*/
 
 .services {
 	padding-top: 40px;
@@ -724,172 +690,6 @@ ol {
 .service-item h3 {
 	margin-bottom: 30px;
 }
-
-/*---------------------
-  Menu Section
------------------------*/
-
-.menu-tab-nav.nav-tabs {
-	border-bottom: none;
-	text-align: center;
-	display: block;
-	margin-bottom: 90px;
-}
-
-.menu-tab-nav.nav-tabs .nav-item {
-	display: inline-block;
-}
-
-.menu-tab-nav.nav-tabs .nav-item .nav-link {
-	color: #fff;
-	border: none;
-}
-
-.menu-tab-nav.nav-tabs .nav-item .nav-link.active {
-	background-color: transparent;
-	border: none;
-	color: #ffc515;
-}
-
-.menu-tab-nav.nav-tabs .nav-item .nav-link:hover {
-	border: none;
-}
-
-.menu-section {
-	padding-bottom: 83px;
-}
-
-.menu-dark .menu-item h5 {
-	color: #7e7e7e;
-}
-
-.menu-dark .menu-item p {
-	color: #b6b5b5;
-}
-
-.menu-dark .menu-item .menu-price {
-	color: #7e7e7e;
-}
-
-.menu-dark .menu-item .menu-price:after {
-	border-bottom: 2px dotted #dcdcdc;
-}
-
-.menu-item {
-	margin-bottom: 45px;
-}
-
-.menu-item h5 {
-	color: #fff;
-	margin-bottom: 8px;
-}
-
-.menu-item p {
-	font-size: 12px;
-	line-height: normal;
-	display: table-cell;
-	width: 222px;
-	padding-right: 18px;
-	font-style: italic;
-}
-
-.menu-item .mi-meta {
-	display: table;
-	width: 100%;
-}
-
-.menu-item .menu-price {
-	display: table-cell;
-	color: #fff;
-	text-align: right;
-	position: relative;
-	font-size: 17px;
-}
-
-.menu-item .menu-price:after {
-	position: absolute;
-	content: "";
-	width: calc(100% - 63px);
-	left: 0;
-	top: 50%;
-	margin-top: -1px;
-	border-bottom: 2px dotted rgba(255, 255, 255, 0.25);
-}
-
-/*---------------------
-  Footer Section
------------------------*/
-
-.footer-bg-area {
-	height: 553px;
-	position: relative;
-}
-
-.map-warp {
-	height: 417px;
-	background: #888;
-}
-
-.contact-form-area {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: -212px;
-}
-
-.contact-form-warp {
-	background: #fff;
-	padding: 45px 95px 65px;
-}
-
-.contact-form-warp .section-title {
-	margin-bottom: 67px;
-}
-
-.contact-form input,
-.contact-form textarea {
-	width: 100%;
-	border: none;
-	background: #eff4f6;
-	padding: 10px 27px;
-	font-size: 12px;
-	height: 52px;
-	margin-bottom: 17px;
-}
-
-.contact-form textarea {
-	padding-top: 21px;
-	height: 190px;
-	margin-bottom: 25px;
-}
-
-.copyright {
-	position: absolute;
-	width: 100%;
-	bottom: 27px;
-	left: 0;
-	color: #777777;
-	font-size: 14px;
-	text-align: center;
-}
-
-.copyright-s2 {
-	width: 100%;
-	background: #000000;
-	padding: 23px 0;
-	text-align: center;
-}
-
-.copyright-s2 p {
-	color: #777777;
-	margin-bottom: 0;
-	font-size: 14px;
-}
-
-/*--------------
-  Other Page
------------------
-=================*/
 
 .page-top-info {
 	height: 678px;
@@ -913,10 +713,6 @@ ol {
 .page-top-info h2 span {
 	color: #ffc515;
 }
-
-/*---------------
-    About Page
------------------*/
 
 .chefs-section {
 	padding-top: 130px;
@@ -1012,12 +808,12 @@ ol {
 .mp-menu-tab-nav .nav-item .nav-link.active {
 	background: #fff;
 	border: none;
-	outline: 1px solid #ffc515;
+	outline: 1px solid #b3ffb3;
 	outline-offset: -1px;
 }
 
 .mp-menu-tab-nav .nav-item .nav-link.active h5 {
-	color: #ffc515;
+	color: #b3ffb3;
 }
 
 .mp-menu-tab-nav .nav-item .nav-link:hover {
@@ -1053,7 +849,7 @@ ol {
 
 .blog-item .blog-date {
 	color: #000;
-	background: #ffc515;
+	background: #b3ffb3;
 	display: inline-block;
 	min-width: 144px;
 	text-align: center;
@@ -1087,7 +883,7 @@ ol {
 
 .site-pagination a.active {
 	min-width: 37px;
-	background: #ffc515;
+	background: #b3ffb3;
 }
 
 .sb-widget {
@@ -1123,7 +919,7 @@ ol {
 }
 
 .sb-widget ul li a:hover {
-	color: #ffc515;
+	color: #b3ffb3;
 }
 
 .sb-search {
@@ -1167,7 +963,7 @@ ol {
 
 .latest-posts-widget .lp-content span {
 	font-size: 12px;
-	color: #ffc515;
+	color: #b3ffb3;
 }
 
 .latest-posts-widget .lp-content h6 {
