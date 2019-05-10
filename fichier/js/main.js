@@ -92,7 +92,7 @@ jQuery(document).ready(function($){
 		productprice = document.getElementsByClassName('mu-menu-price').value;
 
 		productId = productId + 1; 
-		var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="Pictures/burger.jpg" alt="placeholder"></a></div><div class="product-details"><h3><a href="#0">Plat </a></h3><div class="actions"><div class="quantité"><label for="cd-product-'+ productId +'">Quantity</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div><a href="#0" class="delete-item">Supprimer le Plat</a></li>');
+		var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="Pictures/burger.jpg" alt="placeholder"></a></div><div class="product-details"><h3><a href="#0">Plat </a></h3><div class="actions"><div class="quantité"><label for="cd-product-'+ productId +'">Quantité</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div><a href="#0" class="delete-item">Supprimer le Plat</a></li>');
 		cartList.prepend(productAdded);
 	}
 
