@@ -87,7 +87,6 @@ jQuery(document).ready(function($){
 	}
 
 	function addProduct() {
-<<<<<<< HEAD
 		//this is just a product placeholder
 		//you should insert an item with the selected product info
 		var $parent = $(this).parents('.media');
@@ -96,14 +95,6 @@ jQuery(document).ready(function($){
 		//replace productId, productName, price and url with your real product info
 		productId = productId + 1; 
 		var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="'+ productImage +'" alt="placeholder"></a></div><div class="000000"><h3><a href="#0">'+ productName +'</a></h3><span class="price">$25.99</span><div class="actions"><a href="#0" class="delete-item">Delete</a><div class="quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>');
-=======
-
-		productname = document.getElementsByClassName('media-heading').value;
-		productprice = document.getElementsByClassName('mu-menu-price').value;
-
-		productId = productId + 1; 
-		var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="Pictures/burger.jpg" alt="placeholder"></a></div><div class="product-details"><h3><a href="#0">Plat </a></h3><div class="actions"><div class="quantité"><label for="cd-product-'+ productId +'">Quantité</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div><a href="#0" class="delete-item">Supprimer le Plat</a></li>');
->>>>>>> 14afa56f93d767ea6a919a732a446fd40ab5851e
 		cartList.prepend(productAdded);
 	}
 
