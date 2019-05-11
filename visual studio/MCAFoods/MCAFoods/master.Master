@@ -1,0 +1,187 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="MCAFoods.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/style.css"> 
+  <link rel="icon" type="image/jpg" href="pictures\logo.jpg"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="fichier/js/main.js"></script> 
+    <title>MCA | Accueil</title>
+
+    <link href="fichier/css/font-awesome.css" rel="stylesheet">
+    <link href="fichier/css/bootstrap.css" rel="stylesheet">   
+  <link href="style.css" rel="stylesheet" media="all">   
+  <script src="fichier/js/jquery-1.11.1.min.js"></script>
+
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--------------NAV BAR---------------->
+<script src="fichier/js/jquery.vide.min.js"></script>
+  <div data-vide-bg="img/cook">
+
+    <div class="banner">
+      <div class="container">
+        <div class="header">
+          <div class="logo">
+           <a href="index.html"><img  src="pictures\logo.jpg" style="width:60px" class="rounded-circle"></a>
+          </div>
+          <div class="top-nav">
+            <nav class="navbar navbar-default">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-----          
+                </button>
+              
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a class="active" href="index.html">Accueil</a></li>
+                  <li><a href="#mu-about">About us</a></li>
+                  <li><a href="#history">Histoire</a></li>
+                  <li><a href="#mu-coupsdecoeur">Nos coups de coeur</a></li> 
+                  <li><a href="#mu-counter">Catégorie</a></li>
+                  <li><a href="#mu-restaurant-menu">Menu</a></li>
+                  <li><a href="#mu-gallery">Galerie</a></li>
+                  <li><a href="#mu-team">Notre équipe</a></li>
+                  <li><a href="#mu-contact">Contactez-Nous</a></li>
+</ul> 
+                  <div class="clearfix"> </div>
+                
+              </div>  
+            </nav>    
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="banner-info">
+            <span class="mu-slider-small-title text-success" style="font-size: 40px">Bienvenue à</span>
+            <br> <br> <br>
+            <h2 class="mu-slider-title text-success" style="color: #009933">MCA Foods</h2>
+          <p style="font-size: 20px;">Restaurant Marocain en Ligne.</p>
+        </div>
+        <div class="banner-grads">
+          <div class="col-md-4 banner-grad">
+            <div class="banner-grad-img">
+              <img src="pictures/merguez.jpg" alt="" />
+              <h4>M</h4>
+            </div>
+          </div>
+          <div class="col-md-4 banner-grad">
+            <div class="banner-grad-img">
+              <img src="pictures/10025061.jpg" alt="" />
+              <h4>C</h4>
+            </div>
+          </div>
+          <div class="col-md-4 banner-grad">
+            <div class="banner-grad-img">
+              <img src="pictures/new-style-tuna-rolls.jpg" alt="" />
+              <h4>A</h4>
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+    </div>
+
+ 	
+
+</div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+         <!-- footer -->
+    <footer class="footer-content">
+        <div class="layer footer">
+            <div class="container-fluid">
+                <div class="row footer-top-inner">
+                    <div style="margin-top: 20px" class="col-lg-4 col-md-6 footer-top mt-md-0 mt-sm-5">
+                        
+           <a href="index.html"><img  src="pictures\logo.jpg" style="width:60px ; float: left;" class=" rounded-circle"></a>
+                        
+                        <p class="my-3">MCA est un restaurent marocain localisé à Marrakech Gueliz . Parmi Notre activités principales : Préparer des bons et sanitaires plats marocains, français, thaïlandais et japonais, donner une expérience de qualité aux visiteurs.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                        <div class="footer-w3pvt">
+                            <h3 class="mb-3 w3pvt_title">Heures d'ouverture</h3>
+                            <hr>
+                            <ul class="list-info-w3pvt last-contact mt-lg-4">
+                                <li>
+                                    <p> Lundi - Vendredi 12.00 am - 00.00 pm</p>
+
+                                </li>
+                                <li class="my-2">
+                                    <p>Samedi 12.00 am - 01.00 am</p>
+
+                                </li>
+                                <li class="my-2">
+                                    <p>Dimanche 12.00 am - 00.00 am</p>
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                        <div class="footer-w3pvt">
+                            <h3 class="mb-3 w3pvt_title">Contactez-Nous</h3>
+                            <hr>
+                            <div class="last-contact">
+                                <p>
+                                    <a href="mailto:example@email.com"><span style="font-size: 15px;">mcafoods@gmail.com</span> </a>
+                                </p>
+                            </div>
+                            <div class="last-contact my-2">
+                                <p>+ 212 662334123</p>
+                            </div>
+                            <div class="last-contact">
+                                <p>+ 90 Gueliz Bloc 3 Marrakech.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="copy-right-grids text-success text-li text-center my-sm-4 my-4">© 2019 MCA Foods
+                </p>
+                <div class="footer text-center mt-4">
+                    <ul class="list-unstyled icons">
+                        <li>
+                            <a href="https://www.facebook.com/Mca-Foods-407143216733119/">
+                                <span class="fa fa-facebook-f"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/mca_foods/">
+                                <span class="fa fa-instagram"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://mail.google.com/mail/u/1/#inbox">
+                                <span class="fa fa-google-plus"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="move-top text-right"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
+            </div>
+            <!-- //footer bottom -->
+        </div>
+    </footer>
+    </form>
+    <script src="fichier/js/jquery.min.js"></script>  
+  <script src="fichier/js/bootstrap.js"></script>   
+  <script src="fichier/js/slick.js" type="text/javascript" ></script>
+  <script src="fichier/js/custom.js"></script> 
+  
+  <script src="fichier/js/simple-animated-counter.js"></script>
+  <script src="fichier/js/jquery.magnific-popup.min.js"></script>
+  <script src="fichier/js/bootstrap-datepicker.js"></script> 
+
+ <script src="fichier/js/app.js"></script> 
+</body>
+</html>
