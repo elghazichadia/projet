@@ -6,6 +6,7 @@
 
     <meta charset="UTF-8">
     
+  <link rel="icon" type="image/jpg" href="pictures\logo.jpg"/>
 
     <link rel="stylesheet" href="dist/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
@@ -32,8 +33,8 @@
 </head>
 
 <body>
-    <script src="fichier/js/jquery.vide.min.js"></script>
-  <div data-vide-bg="video/cook">
+    
+  <div style="background-image: url(video/cook.jpg);">
     
     <div class="banner">
       <div class="container">
@@ -44,13 +45,13 @@
         </div>
         <div class="banner-info">
             <h2 class="mu-slider-title text-success" style="color: #009933">MCA Foods</h2>
-          <h3 style="color:white;">Formulaire de Paiement</h3>
+          <h3 style="color:white;">Formulaire du Paiement</h3>
         </div>
         </div>
       </div>
     </div>
 </div>
-    <div class="loader"></div>
+    
 
     <main id="main" role="main">
 
@@ -59,7 +60,7 @@
         <section id="checkout-container">
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-md-8 order-md-1">
+                    <div class="col-md-12 order-md-1">
                         <form class="needs-validation" novalidate>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
@@ -79,18 +80,18 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="username">Nom d'Utilisateur</label>
+                                <label for="username">Numero de téléphone</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" id="username" placeholder="Nom d utilisateur" required>
+                                    <input type="text" class="form-control" id="phone" placeholder="Numero de téléphone" required>
                                     <div class="invalid-feedback" style="width: 100%;">
-                                        Le Nom d'Utilisateur est Obligatoire
+                                        Le Numero de téléphone est Obligatoire
                                     </div>
                                 </div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="email">Email
-                                    <span class="text-muted">(Optional)</span>
+                                    <span class="text-muted">(Optionel)</span>
                                 </label>
                                 <input type="email" class="form-control" id="email" placeholder="nom@gmail.com">
                                 <div class="invalid-feedback">
@@ -130,29 +131,21 @@
                                 </div>
                             </div>
                             <hr class="mb-4">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="same-address">
-                                <label class="custom-control-label" for="same-address">L'adresse de livraison est la même adresse de facturation</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="save-info">
-                                <label class="custom-control-label" for="save-info">Sauvegarder cette information pour la prochaine fois</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="save-info">
-                                <label class="custom-control-label" for="save-info">Paiement à La Livraison</label>
-                            </div>
+                            <p class="text-success">Paiment à la livraison</p>
+                            <p>Frais de livraison : 20 DH</p>
+                          
                             <hr class="mb-4">
-                            
-                            <button class="btn btn-primary btn-lg btn-block" type="submit" >
-                                <a href="Order.html"><i class="fa fa-credit-card" ></i></a>   Finaliser votre commande</button>
+                            <a href="Order.html">
+                            <button class="btn btn-success btn-lg btn-block" type="submit" >
+                               <i class="fa fa-credit-card" ></i> Finaliser votre commande</button>
+                            </a>  
                         </form>
                     </div>
                 </div>
             </div>
             </div>
         </section>
-        <a href="#" class="btn btn-primary scrollUp">
+        <a href="#" class="btn btn-success scrollUp">
             <i class="fa fa-arrow-circle-o-up"></i>
         </a>
     </main>
