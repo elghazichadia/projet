@@ -1,26 +1,4 @@
-/** 
-  * Template Name: OsteriaX
-  * Version: 1 
-  * Template Scripts
-  * Author: MarkUps
-  * Author URI: http://www.markups.io/
 
-  Custom JS
-  
-
-  1. TOP SLIDER (SLICK SLIDER) 
-  2. PORTFOLIO POPUP VIEW ( IMAGE LIGHTBOX ) 
-  3. DATEPICKER
-  4. SHEF SLIDER ( SLICK SLIDER )
-  5. TESTIMONIAL SLIDER ( SLICK SLIDER )
-  6. GOOGLE MAP
-  7. MENU SMOOTH SCROLLING
-  8. HOVER DROPDOWN MENU
-  9. SCROLL TOP BUTTON
-  10. BUTTON SMOOTH SCROLL ( VIEW RESERVATION FORM ) 
-
-  
-**/
 
 jQuery(function($){
 
@@ -194,41 +172,7 @@ jQuery(function($){
     });
 
     
-  /* ----------------------------------------------------------- */
-  /*  9. SCROLL TOP BUTTON
-  /* ----------------------------------------------------------- */
-
-  //Check to see if the window is top if not then display button
-
-    jQuery(window).scroll(function(){
-      if (jQuery(this).scrollTop() > 300) {
-        jQuery('.scrollToTop').fadeIn();
-      } else {
-        jQuery('.scrollToTop').fadeOut();
-      }
-    });
-     
-    //Click event to scroll to top
-
-    jQuery('.scrollToTop').click(function(){
-      jQuery('html, body').animate({scrollTop : 0},800);
-      return false;
-    });
-  
-  /* ----------------------------------------------------------- */
-  /*  10. BUTTON SMOOTH SCROLL ( VIEW MY WORK )
-  /* ----------------------------------------------------------- */
-
-    $('.mu-reservation-btn').on('click',function (e) {
-          e.preventDefault();
-          var target = this.hash,
-          $target = $(target);
-          $('html, body').stop().animate({
-              'scrollTop': $target.offset().top
-          }, 1000, 'swing', function () {
-              window.location.hash = target;
-      });
-  });
+  /  });
   
 });
 
