@@ -61,18 +61,20 @@
             <div class="container">
                 <div class="row py-5">
                     <div class="col-md-12 order-md-1">
-                        <form class="needs-validation" onsubmit="valider()">
+                        <form class="needs-validation" onsubmit="valider()" runat="server">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="firstName">Prénom</label>
-                                    <input type="text" class="form-control" id="firstName" placeholder="Prénom" value="" required=""/>
+                                    
+                                     <asp:TextBox ID="firstName" CssClass="form-control " runat="server" placeholder="Prénom" required=""></asp:TextBox>
                                     <div class="invalid-feedback">
                                         Le Prénom est Obligatoire
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="lastName">Nom</label>
-                                    <input type="text" class="form-control" id="lastName" placeholder="Nom" value="" required=""/>
+                                    <asp:TextBox ID="lastName" CssClass="form-control " runat="server" placeholder="Nom" required=""></asp:TextBox>
+                                 
                                     <div class="invalid-feedback">
                                        Le Nom est Obligatoire
                                     </div>
@@ -82,7 +84,7 @@
                             <div class="mb-3">
                                 <label for="Phone">Numero de téléphone</label>
                                 <div class="input-group">
-                                    <input type="text" class="form-control" id="phone" placeholder="Numero de téléphone" required=""/>
+                                    <asp:TextBox ID="phone" CssClass="form-control " runat="server" placeholder="Numero de téléphone" required=""></asp:TextBox>
                                     <div class="invalid-feedback" style="width: 100%;">
                                         Le Numero de téléphone est Obligatoire
                                     </div>
@@ -93,7 +95,7 @@
                                 <label for="email">Email
                                     <span class="text-muted">(Optionel)</span>
                                 </label>
-                                <input type="email" class="form-control" id="email" placeholder="nom@gmail.com"/>
+                                    <asp:TextBox type="email" ID="email" CssClass="form-control " runat="server" placeholder="nom@gmail.com" required=""></asp:TextBox>
                                 <div class="invalid-feedback">
                                 	Veuillez Entrer Un Email Valide pour la Modification du livraison 
                                    
@@ -102,7 +104,7 @@
 
                             <div class="mb-3">
                                 <label for="address">Adresse</label>
-                                <input type="text" class="form-control" id="address" placeholder="Marrakech Quatrier 2 BLD" required=""/>
+                                    <asp:TextBox type="text" ID="address" CssClass="form-control " runat="server" placeholder="Marrakech Quatrier 2 BLD" required=""></asp:TextBox>
                                 <div class="invalid-feedback">
                                    Veuillez Entrer l'adresse de livraison
                                 </div>
@@ -124,7 +126,7 @@
                                 </div>
                                 <div class="col-md-3 mb-3">
                                     <label for="zip">Zip</label>
-                                    <input type="text" class="form-control" id="zip" placeholder="" required=""/>
+                                    <asp:TextBox type="text" ID="zip" CssClass="form-control " runat="server" placeholder="" required=""></asp:TextBox>
                                     <div class="invalid-feedback">
                                       Le code  Zip est Obligatoire.
                                     </div>
@@ -136,9 +138,9 @@
                           
                             <hr class="mb-4"/>
                             
-                            <button  class="btn btn-success btn-lg btn-block" type="submit" >
-                               <i class="fa fa-credit-card" ></i> Finaliser votre commande</button>
-                              <!-- The Modal -->
+                            
+                            <asp:Button ID="Button1" cssClass="btn btn-success btn-lg btn-block" runat="server" Text=" Finaliser votre commande" OnClick="Button1_Click" />
+                            <!-- The Modal -->
                             <div id="modalv">
                             <div class="modal" id="myModal"><div class="modal-dialog"><div class="modal-content"><div class="modal-header" style="background-color:  #4dff88;"><p style="font-size: 20px;margin-left: 15px; " class="modal-title" >Message de confirmation</p><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body"><img src="img/valide.png" style="margin: auto;"/><br/>Votre commande a bien été validé. Merci pour votre confiance à MCA Foods.</div><div class="modal-footer"><button type="button" class="btn btn-success m-auto" data-dismiss="modal">Revenir à MCA.ma</button></div></div></div></div>
                                 </div>

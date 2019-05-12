@@ -23,11 +23,21 @@
     <link href="style.css" rel="stylesheet" media="all">   
     <script src="fichier/js/jquery-1.11.1.min.js"></script>
 <script>
-             function valider() {
+    $(document).ready(function() {
+   
+   // Lorsque l'on clique sur show on affiche la fenêtre modale
+   $('#needs-validation').submit(function (e) {
+       //On désactive le comportement du lien
+        e.preventDefault();
+      showModal();
+      alert('fvll');
+   });
+   });
+            // function valider() {
 
-              $('#myModal').modal();
-            alert('fvll');
-        }
+             // $('#myModal').modal();
+           // alert('fvll');
+       // }
         
         </script>
 </head>

@@ -1,5 +1,5 @@
 create database restaurant
-use retaurant
+use restaurant
 
 create table Client (
 	IdClient int primary key identity,
@@ -34,4 +34,13 @@ Create table Produit (
 	Qtestock int,
 	prixUnitaire decimal(5,2)
 )
+ create table msg(
+ idmsg int primary key identity,
+ name varchar(20),
+ Email varchar(30),
+ Sujet varchar(50),
+ Msg varchar(100),);
 
+ create table paiment(
+ idp int primary key identity,
+ prenom
