@@ -24,10 +24,16 @@
     <script src="fichier/js/jquery-1.11.1.min.js"></script>
     <script>
         function valider() {
+
             
-            $('#myModal').modal();
         }
-       
+        $('#needs-validation').submit(function(e){
+  e.preventDefault(); // dont submit multiple times
+            setTimeout(function () {
+                $('#myModal').modal('show');
+    
+  });
+});
         </script>
 </head>
 <body>
