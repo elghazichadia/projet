@@ -1,10 +1,4 @@
-/*!
- * Datepicker for Bootstrap v1.7.0-dev (https://github.com/eternicode/bootstrap-datepicker)
- *
- * Copyright 2012 Stefan Petre
- * Improvements by Andrew Rowls
- * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
- */(function(factory){
+(function(factory){
     if (typeof define === "function" && define.amd) {
         define(["jquery"], factory);
     } else if (typeof exports === 'object') {
@@ -194,13 +188,12 @@
 		},
 
 		_process_options: function(opts){
-			// Store raw options for reference
+			
 			this._o = $.extend({}, this._o, opts);
-			// Processed options
+
 			var o = this.o = $.extend({}, this._o);
 
-			// Check if "de-DE" style date is available, if not language should
-			// fallback to 2 letter code eg "de"
+			
 			var lang = o.language;
 			if (!dates[lang]){
 				lang = lang.split('-')[0];
@@ -209,16 +202,16 @@
 			}
 			o.language = lang;
 
-			// Retrieve view index from any aliases
+			
 			o.startView = this._resolveViewName(o.startView, 0);
 			o.minViewMode = this._resolveViewName(o.minViewMode, 0);
 			o.maxViewMode = this._resolveViewName(o.maxViewMode, 4);
 
-			// Check that the start view is between min and max
+
 			o.startView = Math.min(o.startView, o.maxViewMode);
 			o.startView = Math.max(o.startView, o.minViewMode);
 
-			// true, false, or Number > 0
+			
 			if (o.multidate !== true){
 				o.multidate = Number(o.multidate) || false;
 				if (o.multidate !== false)
@@ -387,13 +380,13 @@
 				];
 			}
 			this._events.push(
-				// Component: listen for blur on element descendants
+				
 				[this.element, '*', {
 					blur: $.proxy(function(e){
 						this._focused_from = e.target;
 					}, this)
 				}],
-				// Input: listen for blur on element
+	
 				[this.element, {
 					blur: $.proxy(function(e){
 						this._focused_from = e.target;
@@ -402,7 +395,7 @@
 			);
 
 			if (this.o.immediateUpdates) {
-				// Trigger input updates immediately on changed year/month
+	
 				this._events.push([this.element, {
 					'changeYear changeMonth': $.proxy(function(e){
 						this.update(e.date);
@@ -715,25 +708,22 @@
 				if (this.o.orientation.x === 'right')
 					left -= calendarWidth - width;
 			}
-			// auto x orientation is best-placement: if it crosses a window
-			// edge, fudge it sideways
+			
 			else {
 				if (offset.left < 0) {
-					// component is outside the window on the left side. Move it into visible range
+					
 					this.picker.addClass('datepicker-orient-left');
 					left -= offset.left - visualPadding;
 				} else if (left + calendarWidth > windowWidth) {
-					// the calendar passes the widow right edge. Align it to component right side
+					
 					this.picker.addClass('datepicker-orient-right');
 					left += width - calendarWidth;
 				} else {
-					// Default to left
+					
 					this.picker.addClass('datepicker-orient-left');
 				}
 			}
 
-			// auto y orientation is best-situation: top or bottom, no fudging,
-			// decision based on which shows more of the calendar
 			var yorient = this.o.orientation.y,
 				top_overflow;
 			if (yorient === 'auto'){
@@ -812,11 +802,11 @@
 				this.viewDate = this.o.defaultViewDate;
 
 			if (fromArgs){
-				// setting date by clicking
+			
 				this.setValue();
 			}
 			else if (dates.length){
-				// setting date by typing
+			
 				if (String(oldDates) !== String(this.dates))
 					this._trigger('changeDate');
 			}
@@ -882,7 +872,7 @@
 			}
 			if (this.focusDate && date.valueOf() === this.focusDate.valueOf())
 				cls.push('focused');
-			// Compare internal UTC date with local today, not UTC today
+			
 			if (this.o.todayHighlight &&
 				date.getUTCFullYear() === today.getFullYear() &&
 				date.getUTCMonth() === today.getMonth() &&
@@ -1022,16 +1012,15 @@
 				if (prevMonth.getUTCDay() === this.o.weekStart){
 					html.push('<tr>');
 					if (this.o.calendarWeeks){
-						// ISO 8601: First week contains first thursday.
-						// ISO also states week starts on Monday, but we can be more abstract here.
+						
 						var
-							// Start of current week: based on weekstart/current date
+							
 							ws = new Date(+prevMonth + (this.o.weekStart - prevMonth.getUTCDay() - 7) % 7 * 864e5),
-							// Thursday of this week
+			
 							th = new Date(Number(ws) + (7 + 4 - ws.getUTCDay()) % 7 * 864e5),
-							// First Thursday of year, year from thursday
+			
 							yth = new Date(Number(yth = UTCDate(th.getUTCFullYear(), 0, 1)) + (7 + 4 - yth.getUTCDay())%7*864e5),
-							// Calendar week: ms between thursdays, div ms per day, div 7 days
+							
 							calWeek =  (th - yth) / 864e5 / 7 + 1;
 						html.push('<td class="cw">'+ calWeek +'</td>');
 
@@ -1108,7 +1097,7 @@
 				});
 			}
 
-			// Generating decade/years picker
+			
 			this._fill_yearsView(
 				'.datepicker-years',
 				'year',
@@ -1120,7 +1109,7 @@
 				this.o.beforeShowYear
 			);
 
-			// Generating century/decades picker
+		
 			this._fill_yearsView(
 				'.datepicker-decades',
 				'decade',
@@ -1132,7 +1121,7 @@
 				this.o.beforeShowDecade
 			);
 
-			// Generating millennium/centuries picker
+			
 			this._fill_yearsView(
 				'.datepicker-centuries',
 				'century',
@@ -1215,25 +1204,25 @@
 				this.fill();
 			}
 
-			// Clicked on today button
+		
 			if (target.hasClass('today')){
 				this.showMode(-2);
 				this._setDate(UTCToday(), this.o.todayBtn === 'linked' ? null : 'view');
 			}
 
-			// Clicked on clear button
+			
 			if (target.hasClass('clear')){
 				this.clearDates();
 			}
 
 			if (!target.hasClass('disabled')){
-				// Clicked on a day
+				
 				if (target.hasClass('day')){
 					day = parseInt(target.text(), 10) || 1;
 					year = this.viewDate.getUTCFullYear();
 					month = this.viewDate.getUTCMonth();
 
-					// From last month
+					
 					if (target.hasClass('old')){
 						if (month === 0) {
 							month = 11;
@@ -1246,7 +1235,7 @@
  						}
  					}
 
-					// From next month
+				
 					if (target.hasClass('new')) {
 						if (month === 11){
 							month = 0;
@@ -1284,7 +1273,7 @@
 					this.fill();
 				}
 
-				// Clicked on a year
+				
 				if (target.hasClass('year')
 						|| target.hasClass('decade')
 						|| target.hasClass('century')) {
@@ -1398,36 +1387,29 @@
 			dir = dir > 0 ? 1 : -1;
 			if (mag === 1){
 				test = dir === -1
-					// If going back one month, make sure month is not current month
-					// (eg, Mar 31 -> Feb 31 == Feb 28, not Mar 02)
+
 					? function(){
 						return new_date.getUTCMonth() === month;
 					}
-					// If going forward one month, make sure month is as expected
-					// (eg, Jan 31 -> Feb 31 == Feb 28, not Mar 02)
+
 					: function(){
 						return new_date.getUTCMonth() !== new_month;
 					};
 				new_month = month + dir;
 				new_date.setUTCMonth(new_month);
-				// Dec -> Jan (12) or Jan -> Dec (-1) -- limit expected date to 0-11
 				if (new_month < 0 || new_month > 11)
 					new_month = (new_month + 12) % 12;
 			}
 			else {
-				// For magnitudes >1, move one month at a time...
 				for (var i=0; i < mag; i++)
-					// ...which might decrease the day (eg, Jan 31 to Feb 28, etc)...
+
 					new_date = this.moveMonth(new_date, dir);
-				// ...then reset the day, keeping it in the new month
 				new_month = new_date.getUTCMonth();
 				new_date.setUTCDate(day);
 				test = function(){
 					return new_month !== new_date.getUTCMonth();
 				};
 			}
-			// Common date-resetting loop -- if date is beyond end of month, make it
-			// end of month
 			while (test()){
 				new_date.setUTCDate(--day);
 				new_date.setUTCMonth(new_month);
@@ -1472,7 +1454,7 @@
 
 		keydown: function(e){
 			if (!this.picker.is(':visible')){
-				if (e.keyCode === 40 || e.keyCode === 27) { // allow down to re-show picker
+				if (e.keyCode === 40 || e.keyCode === 27) { 
 					this.show();
 					e.stopPropagation();
         }
@@ -1493,10 +1475,10 @@
 					e.preventDefault();
 					e.stopPropagation();
 					break;
-				case 37: // left
-				case 38: // up
-				case 39: // right
-				case 40: // down
+				case 37: 
+				case 38:
+				case 39:
+				case 40: 
 					if (!this.o.keyboardNavigation || this.o.daysOfWeekDisabled.length === 7)
 						break;
 					dir = e.keyCode === 37 || e.keyCode === 38 ? -1 : 1;
@@ -1692,10 +1674,9 @@
 	}
 
 	function opts_from_locale(lang){
-		// Derive options from locale plugins
+
 		var out = {};
-		// Check if "de-DE" style date is available, if not language should
-		// fallback to 2 letter code eg "de"
+	
 		if (!dates[lang]){
 			lang = lang.split('-')[0];
 			if (!dates[lang])
@@ -1720,10 +1701,10 @@
 				options = typeof option === 'object' && option;
 			if (!data){
 				var elopts = opts_from_el(this, 'date'),
-					// Preliminary otions
+					
 					xopts = $.extend({}, defaults, elopts, options),
 					locopts = opts_from_locale(xopts.language),
-					// Options priority: js args, data-attrs, locales, defaults
+					
 					opts = $.extend({}, defaults, locopts, elopts, options);
 				if ($this.hasClass('input-daterange') || opts.inputs){
 					$.extend(opts, {
@@ -1854,8 +1835,7 @@
 		parseFormat: function(format){
 			if (typeof format.toValue === 'function' && typeof format.toDisplay === 'function')
                 return format;
-            // IE treats \0 as a string end in inputs (truncating the value),
-			// so it's a bad format delimiter, anyway
+          
 			var separators = format.replace(this.validParts, '\0').split('\0'),
 				parts = format.match(this.validParts);
 			if (!separators || !separators.length || !parts || parts.length === 0){
@@ -1921,10 +1901,9 @@
 				if (threshold === true)
 					threshold = 10;
 
-				// if year is 2 digits or less, than the user most likely is trying to get a recent century
 				if (year < 100){
 					year += 2000;
-					// if the new year is more than threshold years in advance, use last century
+				
 					if (year > ((new Date()).getFullYear()+threshold)){
 						year -= 100;
 					}
@@ -2095,20 +2074,17 @@
 	$.fn.datepicker.DPGlobal = DPGlobal;
 
 
-	/* DATEPICKER NO CONFLICT
-	* =================== */
+
+
 
 	$.fn.datepicker.noConflict = function(){
 		$.fn.datepicker = old;
 		return this;
 	};
 
-	/* DATEPICKER VERSION
-	 * =================== */
+
 	$.fn.datepicker.version = '1.7.0-dev';
 
-	/* DATEPICKER DATA-API
-	* ================== */
 
 	$(document).on(
 		'focus.datepicker.data-api click.datepicker.data-api',
@@ -2118,7 +2094,7 @@
 			if ($this.data('datepicker'))
 				return;
 			e.preventDefault();
-			// component click requires us to explicitly show it
+	
 			datepickerPlugin.call($this, 'show');
 		}
 	);
