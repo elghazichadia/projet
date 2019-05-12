@@ -25,7 +25,7 @@
     <script>
         function valider() {
 
-              $('#myModal').modal('show');
+              $('#myModal').modal();
             alert('fvll');
         }
         

@@ -23,19 +23,12 @@
     <link href="style.css" rel="stylesheet" media="all">   
     <script src="fichier/js/jquery-1.11.1.min.js"></script>
 <script>
-            var formValid = document.getElementById('btnv');
-            var prenom = document.getElementById('firstName');
-            
-            
-            formValid.addEventListener('click', validation);
-            
-            function validation(event){
-              
-                if (prenom.validity.valueMissing){
-                    event.preventDefault();
-                alert("vhio");
-                }
-            }
+             function valider() {
+
+              $('#myModal').modal();
+            alert('fvll');
+        }
+        
         </script>
 </head>
 
@@ -68,7 +61,7 @@
             <div class="container">
                 <div class="row py-5">
                     <div class="col-md-12 order-md-1">
-                        <form class="needs-validation" novalidate>
+                        <form class="needs-validation"  onsubmit="valider()">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="firstName">Prénom</label>
@@ -143,8 +136,9 @@
                           
                             <hr class="mb-4">
                             
-                            <button id="btnv" data-toggle="modal" data-target="#myModal" class="btn btn-success btn-lg btn-block" onclick="valider()" >
+                            <button id="btnv"  class="btn btn-success btn-lg btn-block"  >
                                <i class="fa fa-credit-card" ></i> Finaliser votre commande</button>
+
                             <!-- The Modal -->
                             <div class="modal" id="myModal">
                             <div class="modal-dialog">
