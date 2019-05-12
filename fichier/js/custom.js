@@ -1,33 +1,9 @@
-/** 
-  * Template Name: OsteriaX
-  * Version: 1 
-  * Template Scripts
-  * Author: MarkUps
-  * Author URI: http://www.markups.io/
 
-  Custom JS
-  
-
-  1. TOP SLIDER (SLICK SLIDER) 
-  2. PORTFOLIO POPUP VIEW ( IMAGE LIGHTBOX ) 
-  3. DATEPICKER
-  4. SHEF SLIDER ( SLICK SLIDER )
-  5. TESTIMONIAL SLIDER ( SLICK SLIDER )
-  6. GOOGLE MAP
-  7. MENU SMOOTH SCROLLING
-  8. HOVER DROPDOWN MENU
-  9. SCROLL TOP BUTTON
-  10. BUTTON SMOOTH SCROLL ( VIEW RESERVATION FORM ) 
-
-  
-**/
 
 jQuery(function($){
 
   
-  /* ----------------------------------------------------------- */
-  /*  1. TOP SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */    
+
 
     jQuery('.mu-top-slider').slick({
       dots: true,
@@ -39,9 +15,6 @@ jQuery(function($){
       cssEase: 'linear'
     });
 
-  /* ----------------------------------------------------------- */
-  /*  2. PORTFOLIO POPUP VIEW ( IMAGE LIGHTBOX )
-  /* ----------------------------------------------------------- */ 
 
   $('.mu-imglink').magnificPopup({
     type: 'image',
@@ -51,15 +24,11 @@ jQuery(function($){
     }
   });
 
-  /* ----------------------------------------------------------- */
-  /*  3. DATEPICKER
-  /* ----------------------------------------------------------- */      
+  
 
     jQuery('#datepicker').datepicker();
 
-  /* ----------------------------------------------------------- */
-  /* 4. SHEF SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */    
+
 
     jQuery('.mu-chef-nav').slick({
       dots: true,
@@ -100,9 +69,6 @@ jQuery(function($){
       ]
     });
 
-  /* ----------------------------------------------------------- */
-  /*  5. TESTIMONIAL SLIDER (SLICK SLIDER)
-  /* ----------------------------------------------------------- */    
 
     jQuery('.mu-testimonial-slider').slick({
       dots: true,      
@@ -113,9 +79,6 @@ jQuery(function($){
       cssEase: 'linear'
     });       
 
-  /* ----------------------------------------------------------- */
-  /*  6. GOOGLE MAP
-  /* ----------------------------------------------------------- */ 
         
     $('#mu-map').click(function () {
         $('#mu-map iframe').css("pointer-events", "auto");
@@ -127,13 +90,7 @@ jQuery(function($){
     
 
 	
-	
-  /* ----------------------------------------------------------- */
-  /*  7. MENU SMOOTH SCROLLING
-  /* ----------------------------------------------------------- */ 
 
-  
-    //MENU SCROLLING WITH ACTIVE ITEM SELECTED
 
       // Cache selectors
       var lastId,
@@ -159,34 +116,32 @@ jQuery(function($){
         e.preventDefault();
       });
 
-      // Bind to scroll
+
       jQuery(window).scroll(function(){
-         // Get container scroll position
+
          var fromTop = $(this).scrollTop()+topMenuHeight;
          
-         // Get id of current scroll item
+
          var cur = scrollItems.map(function(){
            if ($(this).offset().top < fromTop)
              return this;
          });
-         // Get the id of the current element
+
          cur = cur[cur.length-1];
          var id = cur && cur.length ? cur[0].id : "";
          
          if (lastId !== id) {
              lastId = id;
-             // Set/remove active class
+            
              menuItems
                .parent().removeClass("active")
                .end().filter("[href=\\#"+id+"]").parent().addClass("active");
          }           
       })
   
-  /* ----------------------------------------------------------- */
-  /*  8. HOVER DROPDOWN MENU
-  /* ----------------------------------------------------------- */ 
+
   
-  // for hover dropdown menu
+
     jQuery('ul.nav li.dropdown').hover(function() {
       jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
     }, function() {
@@ -194,11 +149,9 @@ jQuery(function($){
     });
 
     
-  /* ----------------------------------------------------------- */
-  /*  9. SCROLL TOP BUTTON
-  /* ----------------------------------------------------------- */
 
-  //Check to see if the window is top if not then display button
+
+
 
     jQuery(window).scroll(function(){
       if (jQuery(this).scrollTop() > 300) {
@@ -208,16 +161,14 @@ jQuery(function($){
       }
     });
      
-    //Click event to scroll to top
+
 
     jQuery('.scrollToTop').click(function(){
       jQuery('html, body').animate({scrollTop : 0},800);
       return false;
     });
   
-  /* ----------------------------------------------------------- */
-  /*  10. BUTTON SMOOTH SCROLL ( VIEW MY WORK )
-  /* ----------------------------------------------------------- */
+
 
     $('.mu-reservation-btn').on('click',function (e) {
           e.preventDefault();
