@@ -25,15 +25,11 @@
     <script>
         function valider() {
 
-            
+              $('#myModal').modal('show');
+            alert('fvll');
         }
-        $('#needs-validation').submit(function(e){
-  e.preventDefault(); // dont submit multiple times
-            setTimeout(function () {
-                $('#myModal').modal('show');
-    
-  });
-});
+        
+
         </script>
 </head>
 <body>
