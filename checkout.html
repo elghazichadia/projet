@@ -22,6 +22,21 @@
       <link href="fichier/css/bootstrap.css" rel="stylesheet">   
     <link href="style.css" rel="stylesheet" media="all">   
     <script src="fichier/js/jquery-1.11.1.min.js"></script>
+<script>
+            var formValid = document.getElementById('btnv');
+            var prenom = document.getElementById('firstName');
+            
+            
+            formValid.addEventListener('click', validation);
+            
+            function validation(event){
+              
+                if (prenom.validity.valueMissing){
+                    event.preventDefault();
+                alert("vhio");
+                }
+            }
+        </script>
 </head>
 
 <body>
@@ -127,10 +142,34 @@
                             <p>Frais de livraison : 20 DH</p>
                           
                             <hr class="mb-4">
-                            <a href="Order.html">
-                            <button class="btn btn-success btn-lg btn-block" type="submit" >
+                            
+                            <button id="btnv" data-toggle="modal" data-target="#myModal" class="btn btn-success btn-lg btn-block" onclick="valider()" >
                                <i class="fa fa-credit-card" ></i> Finaliser votre commande</button>
-                            </a>  
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+
+                             <!-- Modal Header -->
+                             <div class="modal-header" style="background-color:  #4dff88;">
+                             <p style="font-size: 20px;margin-left: 15px; " class="modal-title" >Message de confirmation</p>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <img src="img/valide.png" style="padding-left: 160px;margin: auto;"><br>
+                                    Votre commande a bien été validé. Merci pour votre confiance à MCA Foods.
+                             </div>
+
+                                <!-- Modal footer -->
+                         <div class="modal-footer">
+                          <button type="button" class="btn btn-success m-auto" data-dismiss="modal">Revenir à MCA.ma</button>
+                        </div>
+
+                        </div>
+                        </div>
+                        </div>
                         </form>
                     </div>
                 </div>
