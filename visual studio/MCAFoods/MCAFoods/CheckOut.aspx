@@ -22,6 +22,13 @@
       <link href="fichier/css/bootstrap.css" rel="stylesheet"/>   
     <link href="style.css" rel="stylesheet" media="all"/>   
     <script src="fichier/js/jquery-1.11.1.min.js"></script>
+    <script>
+        function valider() {
+            
+            $('#myModal').modal();
+        }
+       
+        </script>
 </head>
 <body>
        
@@ -31,7 +38,7 @@
       <div class="container">
         <div class="header">
           <div class="logo">
-           <a href="index.html"><img  src="pictures\logo.jpg" style="width:60px" class="rounded-circle"></a>
+           <a href="index.html"><img  src="pictures\logo.jpg" style="width:60px" class="rounded-circle"/></a>
           </div>
         </div>
         <div class="banner-info">
@@ -52,7 +59,7 @@
             <div class="container">
                 <div class="row py-5">
                     <div class="col-md-12 order-md-1">
-                        <form class="needs-validation" >
+                        <form class="needs-validation" onsubmit="valider()">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="firstName">Prénom</label>
@@ -121,15 +128,18 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr class="mb-4">
+                            <hr class="mb-4"/>
                             <p class="text-success">Paiment à la livraison</p>
                             <p>Frais de livraison : 20 DH</p>
                           
                             <hr class="mb-4"/>
                             
-                            <button class="btn btn-success btn-lg btn-block" type="submit" >
+                            <button  class="btn btn-success btn-lg btn-block" type="submit" >
                                <i class="fa fa-credit-card" ></i> Finaliser votre commande</button>
-                             
+                              <!-- The Modal -->
+                            <div id="modalv">
+                            <div class="modal" id="myModal"><div class="modal-dialog"><div class="modal-content"><div class="modal-header" style="background-color:  #4dff88;"><p style="font-size: 20px;margin-left: 15px; " class="modal-title" >Message de confirmation</p><button type="button" class="close" data-dismiss="modal">&times;</button></div><div class="modal-body"><img src="img/valide.png" style="margin: auto;"/><br/>Votre commande a bien été validé. Merci pour votre confiance à MCA Foods.</div><div class="modal-footer"><button type="button" class="btn btn-success m-auto" data-dismiss="modal">Revenir à MCA.ma</button></div></div></div></div>
+                                </div>
                         </form>
                     </div>
                 </div>
@@ -148,7 +158,7 @@
                 <div class="row footer-top-inner">
                     <div style="margin-top: 20px" class="col-lg-4 col-md-6 footer-top mt-md-0 mt-sm-5">
                         
-           <a href="index.html"><img  src="pictures\logo.jpg" style="width:60px ; float: left;" class=" rounded-circle"></a>
+           <a href="Home.aspx"><img  src="pictures\logo.jpg" style="width:60px ; float: left;" class=" rounded-circle"/></a>
                         
                         <p class="my-3">MCA est un restaurent marocain localisé à Marrakech Gueliz . Parmi Notre activités principales : Préparer des bons et sanitaires plats marocains, français, thaïlandais et japonais, donner une expérience de qualité aux visiteurs.
                         </p>
@@ -178,7 +188,7 @@
                     <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
                         <div class="footer-w3pvt">
                             <h3 class="mb-3 w3pvt_title">Contactez-Nous</h3>
-                            <hr>
+                            <hr/>
                             <div class="last-contact">
                                 <p>
                                     <a href="mailto:example@email.com"><span style="font-size: 15px;">mcafoods@gmail.com</span> </a>
@@ -227,7 +237,7 @@
 
     
     <script src="fichier/jquery/jquery.min.js"></script>
-    <script src="fichier/popper/popper.min.js" integrity=""></script>
+    <script src="fichier/popper/popper.min.js" ></script>
     <script src="fichier/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
