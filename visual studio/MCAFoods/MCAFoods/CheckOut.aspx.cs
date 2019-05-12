@@ -20,13 +20,16 @@ namespace MCAFoods
 
 		protected void Button1_Click(object sender, EventArgs e)
 		{
-			SqlCommand query = new SqlCommand("insert into personne(email,name,passwor,tel,mjob) values(@Email,@nom,@passw,@tel,@mjob)", oConn);
-			query.Parameters.AddWithValue("@Email", firstName.Text);
+			SqlCommand query = new SqlCommand("insert into paiment(prenom,Nom,Phone,Email,Adresse,zip) values(@prenom,@nom,@tel,@email,@adresse,@zip)", oConn);
+			query.Parameters.AddWithValue("@prenom", firstName.Text);
 			query.Parameters.AddWithValue("@nom", lastName.Text);
-			query.Parameters.AddWithValue("@passw", phone.Text);
-			query.Parameters.AddWithValue("@tel", email.Text);
-			query.Parameters.AddWithValue("@mjob", zip.Text);
-
+			query.Parameters.AddWithValue("@tel", phone.Text);
+			query.Parameters.AddWithValue("@email", email.Text);
+			query.Parameters.AddWithValue("@adresse", address.Text);
+			query.Parameters.AddWithValue("@zip", zip.Text);
+			oConn.Open();
+			query.ExecuteNonQuery();
+			oConn.Close();
 		}
 	}
 }
