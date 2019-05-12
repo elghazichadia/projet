@@ -29,6 +29,11 @@ namespace MCAFoods
 			oConn.Open();
 			query.ExecuteNonQuery();
 			oConn.Close();
+
+			nom.Text = "";
+			Email.Text = "";
+			Subject.Text = "";
+			Message.Text = "";
 		}
 	}
 }

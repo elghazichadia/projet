@@ -30,6 +30,14 @@ namespace MCAFoods
 			oConn.Open();
 			query.ExecuteNonQuery();
 			oConn.Close();
+
+			firstName.Text = "";
+			lastName.Text = "";
+			phone.Text = "";
+			email.Text = "";
+			address.Text = "";
+			zip.Text = "";
+			
 		}
 	}
 }

@@ -39,8 +39,18 @@ Create table Produit (
  name varchar(20),
  Email varchar(30),
  Sujet varchar(50),
- Msg varchar(100),);
+ Msg varchar(100));
+ insert into msg(name,Email,Sujet,Msg) values('chadia','somthing@gmail.com','message','some')
+  select * from msg
 
  create table paiment(
  idp int primary key identity,
- prenom
+ prenom varchar(20),
+ Nom varchar(20),
+ Phone int,
+ Email varchar(30),
+ Adresse varchar(30),
+ Ville varchar(30),
+ zip int);
+
+ select * from paiment
