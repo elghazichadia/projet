@@ -910,54 +910,24 @@ background-image: url(Pictures/bg.jpg);
 .contact-form {
     margin: 3em 0;
 }
-#form {
+.contact-form form {
   margin: 2em 0 0 0;
 }
-#nom   {
+.contact-form input[type="text"] {
     width: 32.6%;
     color: #898888;
     background: none;
     outline: none;
     font-size: 1em;
     padding: 1em;
-    margin: 2em 5em 1em 0;
+    margin: 0 .5em 1em 0;
     border: solid 2px #3C3C3C;
     -webkit-appearance: none;
 }
-#Subject {
-    width: 32.6%;
-    color: #898888;
-    background: none;
-    outline: none;
-    font-size: 1em;
-    padding: 1em;
-    margin: 2 5em 1em 0;
-    border: solid 2px #3C3C3C;
-    -webkit-appearance: none;
-}
-#Email{
-    width: 32.6%;
-    color: #898488;
-    background: none;
-    outline: none;
-    font-size: 1em;
-    padding: 1em;
-    margin: 2 5em 1em 0;
-    border: solid 2px #3C3C3C;
-    -webkit-appearance: none;
-}
-#nom:nth-child(3) {
+.contact-form input[type="text"]:nth-child(3) {
   margin-right: 0;
 }
-#Email:nth-child(3) {
-  margin-right: 0;
-}
- #Subject:nth-child(3) {
-  margin-right: 0;
-}
-
-
-#Message {
+.contact-form textarea {
   resize: none;
   width: 100%;
   color: #898888;
@@ -969,7 +939,7 @@ background-image: url(Pictures/bg.jpg);
   min-height: 150px;
   -webkit-appearance: none;
 }
-#envoyer {
+.contact-form input[type="submit"] {
     border: solid 2px #3C3C3C;
     color: #3C3C3C;
     font-size: 1em;
@@ -981,7 +951,7 @@ background-image: url(Pictures/bg.jpg);
   margin:1em 0 0 0;
   -webkit-appearance:none;
 }
-#envoyer :hover {
+.contact-form input[type="submit"]:hover {
     border: solid 2px #009933;
     background: #009933;
     color: #FFFFFF;

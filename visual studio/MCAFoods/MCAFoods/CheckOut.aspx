@@ -26,7 +26,7 @@
         function valider() {
 
               $('#myModal').modal();
-            alert('fvll');
+            alert('Votre commande a bien été envoyé ! Merci pour votre confiance à MCA Foods.');
         }
         
 

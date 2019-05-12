@@ -16,11 +16,17 @@
     <link href="fichier/css/bootstrap.css" rel="stylesheet">   
   <link href="style.css" rel="stylesheet" media="all">   
   <script src="fichier/js/jquery-1.11.1.min.js"></script>
+    <script>
+        function valider() {
 
+           alert('Votre messgae a bien été envoyé ! Merci.');
+        }
+
+    </script>
     
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" onsubmit="valider()">
         <!--------------NAV BAR---------------->
 <script src="fichier/js/jquery.vide.min.js"></script>
   <div data-vide-bg="img/cook">

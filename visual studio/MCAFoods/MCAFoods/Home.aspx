@@ -40,7 +40,7 @@
   
   </section>
 
-<!--------- End About US---------->
+<!--------- History---------->
 <section class="history" id="history" >
 	<div style=" background:url(img/parallax1.jpg) fixed no-repeat center center;">
     <div class="container "  >  
@@ -1422,21 +1422,21 @@
 
 
    <!-------------------------Contact------------------------>
-
+    
  <div class="container">
   <div id="mu-contact" style="background-color: #ffffff">
       <div class="contact-heading">
         <h2 class="text-success">Contactez-Nous</h2>
       </div> 
-       <div class="contact-form">
-           <div id="form" style="margin-left:3px;" class="form row">
+     <div class="contact-form">
+          <div id="form" style="margin-left:3px;" class="form row">
          <asp:TextBox  type="text" ID="nom" CssClass=" col-md-4 " runat="server" placeholder="Nom" required=""></asp:TextBox>
          <asp:TextBox type="text" ID="Email" CssClass=" col-md-4" runat="server" placeholder="Email" required=""></asp:TextBox>
          <asp:TextBox type="text" ID="Subject" CssClass="col-md-4" runat="server" placeholder="Sujet" required=""></asp:TextBox>
            </div>
                <asp:TextBox type="text" ID="Message" CssClass=" " runat="server" placeholder="Message" required="" Rows="5" TextMode="MultiLine"></asp:TextBox>
            <asp:Button  ID="envoyer" runat="server" Text="Envoyer" OnClick="envoyer_Click" />
-      </div>   
+      </div>    
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13588.231844374694!2d-8.021693223057706!3d31.632263371154174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d931f3209%3A0x96ce34d39325c762!2sGu%C3%A9liz%2C+Marrakech+40000!5e0!3m2!1sfr!2sma!4v1555866682816!5m2!1sfr!2sma" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>

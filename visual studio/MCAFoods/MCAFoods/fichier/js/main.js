@@ -14,19 +14,18 @@ jQuery(document).ready(function($){
 		var undo = cartWrapper.find('.undo');
 		var undoTimeoutId;
 
-
 		addToCartBtn.on('click', function(event){
 			event.preventDefault();
 			addToCart($(this));
 		});
 
-		
+
 		cartTrigger.on('click', function(event){
 			event.preventDefault();
 			toggleCart();
 		});
 
-
+	
 		cartWrapper.on('click', function(event){
 			if( $(event.target).is($(this)) ) toggleCart(true);
 		});
@@ -66,7 +65,6 @@ jQuery(document).ready(function($){
 
 			setTimeout(function(){
 				cartBody.scrollTop(0);
-	
 				if( Number(cartCount.find('li').eq(0).text()) == 0) cartWrapper.addClass('empty');
 			}, 500);
 		} else {
@@ -76,25 +74,17 @@ jQuery(document).ready(function($){
 
 	function addToCart(trigger) {
 		var cartIsEmpty = cartWrapper.hasClass('empty');
-	
 		addProduct();
-
 		updateCartCount(cartIsEmpty);
-
 		updateCartTotal(trigger.data('price'), true);
-
+		
 		cartWrapper.removeClass('empty');
 	}
 
 	function addProduct() {
-		//this is just a product placeholder
-		//you should insert an item with the selected product info
-		var $parent = $(this).parents('.media');
-		var productName = $parent.find('b').text();
-		var productImage = $parent.find('img').attr('src');
 
-		productId = productId + 1; 
-		var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="Pictures/burger.jpg" alt="placeholder"></a></div><div class="product-details"><h3><a href="#0">Plat </a></h3><div class="actions"><div class="quantité"><label for="cd-product-'+ productId +'">Quantité : </label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div><a href="#0" class="delete-item">Supprimer le Plat</a></li>');
+		productId = productId + 1;
+		var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="Pictures/burger.jpg" alt="placeholder"></a></div><div class="product-details"><h3><a href="#0">Plat</a></h3><div class="actions"><a href="#0" class="delete-item">Supprimer</a></div></div></li>');
 		cartList.prepend(productAdded);
 	}
 
@@ -107,11 +97,9 @@ jQuery(document).ready(function($){
 			productTotPrice = Number(product.find('.price').text().replace('$', '')) * productQuantity;
 		
 		product.css('top', topPosition+'px').addClass('deleted');
-
 		updateCartTotal(productTotPrice, false);
 		updateCartCount(true, -productQuantity);
 		undo.addClass('visible');
-
 		undoTimeoutId = setTimeout(function(){
 			undo.removeClass('visible');
 			cartList.find('.deleted').remove();
