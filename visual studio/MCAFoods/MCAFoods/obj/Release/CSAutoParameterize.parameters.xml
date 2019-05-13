@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="com-Web.config Connection String" description="com Chaîne de connexion utilisée dans web.config par l’application pour accéder à la base de données." defaultValue="Data Source=SQL5024.site4now.net;Initial Catalog=DB_A48A28_elghazichadia;User Id=DB_A48A28_elghazichadia_admin;Password=lhamdolah1;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\uer\\Desktop\\PFM\\PFM\\visual\ studio\\MCAFoods\\MCAFoods\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='com']/@connectionString" />
+  </parameter>
+</parameters>

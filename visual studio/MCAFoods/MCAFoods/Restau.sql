@@ -11,14 +11,14 @@ create table Client (
 	Num_Carte int,
 	type_carte varchar(30) check (type_carte in ('Master Card','Visa'))
 )
-
+go
 create table Facture (
 	IdFacture int primary key identity,
 	total decimal(5,2),
 	DateFacture datetime default getdate(),
 	IdClient int foreign key references Client(IdClient) on delete cascade
 )
-
+go
 Create table Commande (
 	IdCommande int primary key identity,
 	Quantite int,
@@ -26,7 +26,7 @@ Create table Commande (
 	DateCom datetime default getdate(),
 	IdClient int foreign key references Client(IdClient) on delete cascade
 )
-
+go
 Create table Produit (
 	IdProduit int primary key identity,
 	Designation varchar(30),
