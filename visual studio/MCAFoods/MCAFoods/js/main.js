@@ -3,36 +3,24 @@
 
 
 $(window).on('load', function() {
-	/*------------------
-		Preloder
-	--------------------*/
+
 	$(".loader").fadeOut(); 
 	$("#preloder").delay(400).fadeOut("slow");
 
 });
 
 (function($) {
-	/*------------------
-		Navigation
-	--------------------*/
+
 	$('.nav-switch').on('click', function(event) {
 		$('.main-menu').slideToggle(400);
 		event.preventDefault();
 	});
 
-
-	/*------------------
-		Background Set
-	--------------------*/
 	$('.set-bg').each(function() {
 		var bg = $(this).data('setbg');
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
 
-
-	/*------------------
-		Hero Slider
-	--------------------*/
 	$('.hero-slider').owlCarousel({
 		loop: true,
 		nav: false,
@@ -64,12 +52,7 @@ $(window).on('load', function() {
 		$('.owl-dots-number').css('marginTop', -av);
 	}
 	currentHSnumber();
-	
 
-
-	/*------------------
-		Testimonials 
-	--------------------*/
 	$('.testimonials-slider').owlCarousel({
 		loop: true,
 		nav: false,
@@ -79,10 +62,6 @@ $(window).on('load', function() {
 	});
 
 
-
-	/*------------------
-		Brands Slider
-	--------------------*/
 	$('.brands-slider').owlCarousel({
 		loop: true,
 		nav: false,
@@ -103,9 +82,7 @@ $(window).on('load', function() {
 	});
 
 	
-	/*------------------
-		Accordions
-	--------------------*/
+
 	$('.panel-link').on('click', function (e) {
 		$('.panel-link').removeClass('active');
 		var $this = $(this);
@@ -116,9 +93,6 @@ $(window).on('load', function() {
 	});
 
 
-	/*------------------
-		Circle progress
-	--------------------*/
 	$('.circle-progress').each(function() {
 		var cpvalue = $(this).data("cpvalue");
 		var cpcolor = $(this).data("cpcolor");
