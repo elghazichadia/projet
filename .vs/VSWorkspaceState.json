@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\visual studio",
     "\\visual studio\\MCAFoods",
     "\\visual studio\\MCAFoods\\MCAFoods"
   ],
-  "SelectedNode": "\\visual studio",
+  "SelectedNode": "\\visual studio\\MCAFoods\\MCAFoods\\master.Master",
   "PreviewInSolutionExplorer": false
 }

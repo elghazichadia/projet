@@ -20,7 +20,7 @@
                 <img src="Pictures/about-us.jpg" alt="img" style="margin-bottom: 40px;">           
                 </div>
               </div>
-              <div style="margin-top: 60px;margin:auto;" class="col-md-6">
+              <div style="padding-top:40px; margin-top: 60px;margin:auto;" class="col-md-6">
                 <div>
                   
                   <p style="font-size: 30px; color:#001a00; margin-top: 40px;" class="text-center">MCA Foods</p>

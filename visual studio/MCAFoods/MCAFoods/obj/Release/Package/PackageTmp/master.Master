@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="css/style.css"> 
-  <link rel="icon" type="image/jpg" href="pictures\logo.jpg"/>
+  <link rel="icon" type="image/jpg" href="Pictures\logo.jpg"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <script src="fichier/js/main.js"></script> 
